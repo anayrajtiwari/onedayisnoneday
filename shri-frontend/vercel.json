@@ -1,5 +1,4 @@
 {
-  "rootDirectory": "shri-frontend",
   "buildCommand": "npm run vercel-build",
   "installCommand": "npm install"
 }
