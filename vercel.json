@@ -1,5 +1,0 @@
-{
-  "buildCommand": "cd shri-frontend && npm run vercel-build",
-  "installCommand": "cd shri-frontend && npm install",
-  "outputDirectory": "shri-frontend/.next"
-}
