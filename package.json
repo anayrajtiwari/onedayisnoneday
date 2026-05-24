@@ -1,0 +1,7 @@
+{
+  "name": "shri-monorepo",
+  "private": true,
+  "scripts": {
+    "vercel-build": "cd shri-frontend && npm run vercel-build"
+  }
+}
