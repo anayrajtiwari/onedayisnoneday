@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+/shri-backend/node_modules/
+/shri-frontend/node_modules/
+
+# Production builds
+/shri-frontend/.next/
+/shri-frontend/out/
+/shri-backend/build/
+
+# Environment files
+.env
+.env*.local
+*.env
+
+# OS Files
+.DS_Store
+Thumbs.db
