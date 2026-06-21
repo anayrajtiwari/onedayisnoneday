@@ -1,17 +1,29 @@
+import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
+import rateLimit from "express-rate-limit";
 import inquiryRoutes from "./routes/inquiryRoutes.js";
+import discussionRoutes from "./routes/discussionRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
+import adminRoutes from "./routes/adminRoutes.js";
 
 const app = express();
 
-// Middleware
+const globalLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { success: false, message: "Too many requests. Please slow down." },
+});
+app.use(globalLimiter);
+
 app.use(helmet({
   crossOriginResourcePolicy: { policy: "cross-origin" }
 }));
 
-// Allow CORS from all origins for development/deployment ease, or customize as needed
 app.use(cors({
   origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
@@ -21,8 +33,10 @@ app.use(cors({
 app.use(morgan("dev"));
 app.use(express.json());
 
-// Routes
 app.use("/api/inquiries", inquiryRoutes);
+app.use("/api/discussions", discussionRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/admin", adminRoutes);
 
 // Basic Health Check
 app.get("/health", (req, res) => {

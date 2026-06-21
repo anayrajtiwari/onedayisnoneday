@@ -1,5 +1,9 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import 'tailwindcss';
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background: #050505;
@@ -63,3 +67,127 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* Auth Page Styles */
+.auth-input {
+  width: 100%;
+  background: rgba(5, 5, 5, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #F5F5F7;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+.auth-input::placeholder {
+  color: rgba(156, 163, 175, 0.3);
+  font-weight: 300;
+}
+
+.auth-input:focus {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.05), 0 0 20px rgba(212, 175, 55, 0.05);
+}
+
+.auth-input:hover:not(:focus) {
+  border-color: rgba(212, 175, 55, 0.15);
+}
+
+/* Auth Ambient Glow Animations */
+.auth-glow-1 {
+  animation: authGlow1 8s ease-in-out infinite;
+}
+
+.auth-glow-2 {
+  animation: authGlow2 10s ease-in-out infinite;
+}
+
+@keyframes authGlow1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.03;
+  }
+  33% {
+    transform: translate(30px, -20px) scale(1.1);
+    opacity: 0.05;
+  }
+  66% {
+    transform: translate(-20px, 30px) scale(0.9);
+    opacity: 0.02;
+  }
+}
+
+@keyframes authGlow2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.04;
+  }
+  50% {
+    transform: translate(-40px, 20px) scale(1.15);
+    opacity: 0.06;
+  }
+}
+
+/* ── Aurora CSS Animations (GPU-composited, off main thread) ─────── */
+.aurora-blob-1 {
+  animation: auroraBlob1 30s linear infinite;
+}
+.aurora-blob-2 {
+  animation: auroraBlob2 35s linear infinite;
+}
+.aurora-streak-1 {
+  animation: auroraStreak1 15s ease-in-out infinite;
+}
+
+@keyframes auroraBlob1 {
+  0%   { transform: translate(0, 0) scale(1);      opacity: 0.1; }
+  50%  { transform: translate(150px, -80px) scale(1.3); opacity: 0.25; }
+  100% { transform: translate(0, 0) scale(1);      opacity: 0.1; }
+}
+@keyframes auroraBlob2 {
+  0%   { transform: translate(0, 0) scale(1);      opacity: 0.1; }
+  50%  { transform: translate(-200px, 100px) scale(1.15); opacity: 0.18; }
+  100% { transform: translate(0, 0) scale(1);      opacity: 0.1; }
+}
+@keyframes auroraStreak1 {
+  0%   { transform: translateY(-400px); opacity: 0; }
+  50%  { opacity: 0.15; }
+  100% { transform: translateY(400px);  opacity: 0; }
+}
+
+/* GPU compositing hints for fixed/animated overlays */
+.glass {
+  contain: layout style paint;
+}
+
+/* Lotus rotation — pure CSS, compositor thread */
+.lotus-rotate {
+  animation: lotusRotate 300s linear infinite;
+}
+.lotus-hero-rotate {
+  animation: lotusRotate 250s linear infinite;
+}
+@keyframes lotusRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Scroll indicator pulse — replaces FM infinite animation */
+.scroll-pulse {
+  animation: scrollPulse 3s ease-in-out infinite;
+}
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0; }
+  50%      { opacity: 1; }
+}
+
+/* Philosophy circle rotation — replaces FM infinite */
+.philosophy-circle {
+  animation: lotusRotate 60s linear infinite;
+}
+
+

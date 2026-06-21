@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import DynamicAurora from "./DynamicAurora";
+import Link from "next/link";
 
 const cardContainerVariants = {
   initial: { opacity: 0, y: 40 },
@@ -29,12 +30,6 @@ const innerGlowVariants = {
   initial: { backgroundColor: "rgba(212, 175, 55, 0.05)" },
   hover: { backgroundColor: "rgba(212, 175, 55, 0.15)" },
   tap: { backgroundColor: "rgba(212, 175, 55, 0.2)" }
-};
-
-const plusVariants = {
-  initial: { rotate: 0, scale: 1, borderColor: "rgba(212, 175, 55, 0.2)" },
-  hover: { rotate: 90, scale: 1.1, borderColor: "rgba(212, 175, 55, 1)" },
-  tap: { rotate: 90, scale: 1.05, borderColor: "rgba(212, 175, 55, 1)" }
 };
 
 const lineVariants = {
@@ -67,7 +62,7 @@ const circleMotifVariants = {
   tap: { scale: 1.05 }
 };
 
-const Card = ({ title, desc, delay, isPlaceholder = false }: { title: string; desc: string; delay: number; isPlaceholder?: boolean }) => (
+const Card = ({ title, desc, icon, delay }: { title: string; desc: string; icon: React.ReactNode; delay: number }) => (
   <motion.div 
     variants={cardContainerVariants}
     custom={delay}
@@ -78,7 +73,6 @@ const Card = ({ title, desc, delay, isPlaceholder = false }: { title: string; de
     whileTap="tap"
     className="relative cursor-pointer select-none"
   >
-    {/* Animated border gradient */}
     <motion.div 
       variants={borderGradientVariants}
       className="absolute -inset-[1px] bg-gradient-to-br from-shri-gold/20 via-transparent to-shri-gold/5 rounded-[2.5rem] transition-opacity duration-700"
@@ -86,78 +80,46 @@ const Card = ({ title, desc, delay, isPlaceholder = false }: { title: string; de
 
     <motion.div 
       variants={glassVariants}
-      className={"relative h-full glass p-10 rounded-[2.5rem] overflow-hidden transition-all duration-700 " + (isPlaceholder ? 'flex flex-col items-center justify-center min-h-[400px]' : 'min-h-[400px]')}
+      className="relative h-full glass p-10 rounded-[2.5rem] overflow-hidden transition-all duration-700 min-h-[400px]"
     >
-      {/* Internal glow */}
       <motion.div 
         variants={innerGlowVariants}
         className="absolute top-0 right-0 w-32 h-32 blur-3xl rounded-full -translate-y-1/2 translate-x-1/2 transition-colors duration-700"
       ></motion.div>
 
-      {isPlaceholder ? (
-        <div className="text-center relative z-10">
-          <motion.div
-            variants={plusVariants}
-            className="w-20 h-20 border rounded-full flex items-center justify-center mb-8 mx-auto transition-colors duration-700"
+      <div className="relative z-10 h-full flex flex-col">
+        <div className="mb-8">
+          <div className="w-14 h-14 border border-shri-gold/20 rounded-2xl flex items-center justify-center mb-6 bg-shri-black/40">
+            {icon}
+          </div>
+          <motion.div 
+            variants={lineVariants}
+            className="h-[1px] bg-shri-gold/40 mb-6 transition-all duration-700"
+          ></motion.div>
+          <motion.h3 
+            variants={titleVariants}
+            className="text-2xl font-light mb-4 tracking-wide transition-colors duration-700"
           >
-             <span className="text-shri-gold text-3xl font-extralight">+</span>
-          </motion.div>
-          <h3 className="text-2xl font-light text-white mb-4 tracking-wide uppercase italic metallic-text">{title}</h3>
-          <p className="text-gray-500 text-sm font-light leading-relaxed tracking-wider">{desc}</p>
+            {title}
+          </motion.h3>
+          <p className="text-gray-400 text-sm font-light leading-relaxed tracking-wide">{desc}</p>
         </div>
-      ) : (
-        <div className="relative z-10 h-full flex flex-col">
-          <div className="mb-6">
-             <motion.div 
-               variants={lineVariants}
-               className="h-[1px] bg-shri-gold/40 mb-6 transition-all duration-700"
-             ></motion.div>
-             <motion.h3 
-               variants={titleVariants}
-               className="text-2xl font-light mb-4 tracking-wide transition-colors duration-700"
-             >
-               {title}
-             </motion.h3>
-             <p className="text-gray-400 text-sm font-light leading-relaxed tracking-wide">{desc}</p>
-          </div>
 
-          <div className="mt-auto pt-8">
+        <div className="mt-auto pt-8">
+          <motion.div 
+            variants={bottomContainerVariants}
+            className="w-full h-32 bg-shri-black/40 rounded-2xl border overflow-hidden relative transition-all duration-700 flex items-center justify-center"
+          >
             <motion.div 
-              variants={bottomContainerVariants}
-              className="w-full h-40 bg-shri-black/40 rounded-2xl border overflow-hidden relative transition-all duration-700"
-            >
-              <motion.div 
-                variants={bottomOverlayVariants}
-                className="absolute inset-0 bg-gradient-to-br from-shri-gold/10 via-transparent to-transparent transition-opacity duration-700"
-              ></motion.div>
-
-              {/* Abstract decorative elements */}
-              <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <div className="space-y-3">
-                  <motion.div
-                    initial={{ width: "30%" }}
-                    whileInView={{ width: "60%" }}
-                    transition={{ duration: 2, delay: delay + 0.5 }}
-                    className="h-[1px] bg-shri-gold/30"
-                  ></motion.div>
-                  <motion.div
-                    initial={{ width: "20%" }}
-                    whileInView={{ width: "40%" }}
-                    transition={{ duration: 2, delay: delay + 0.7 }}
-                    className="h-[1px] bg-shri-gold/20"
-                  ></motion.div>
-                </div>
-              </div>
-
-              {/* Circular motif */}
-              <motion.div 
-                variants={circleMotifVariants}
-                className="absolute -bottom-10 -right-10 w-32 h-32 border border-shri-gold/10 rounded-full transition-transform duration-1000"
-              ></motion.div>
-            </motion.div>
-          </div>
+              variants={bottomOverlayVariants}
+              className="absolute inset-0 bg-gradient-to-br from-shri-gold/10 via-transparent to-transparent transition-opacity duration-700"
+            ></motion.div>
+            <span className="relative z-10 text-[9px] uppercase tracking-[0.4em] text-gray-600">
+              Coming Soon
+            </span>
+          </motion.div>
         </div>
-      )}
+      </div>
     </motion.div>
   </motion.div>
 );
@@ -165,7 +127,6 @@ const Card = ({ title, desc, delay, isPlaceholder = false }: { title: string; de
 export default function AuroraShowcase() {
   return (
     <section id="aurora" className="py-40 px-8 relative overflow-hidden bg-shri-black">
-      {/* New Dynamic Aurora Background */}
       <DynamicAurora />
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -174,47 +135,76 @@ export default function AuroraShowcase() {
             <motion.h2
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               className="text-shri-gold text-[10px] uppercase tracking-[0.8em] mb-6"
             >
-              Excellence Redefined
+              Flagship Product
             </motion.h2>
             <motion.h1
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 1 }}
               className="text-5xl md:text-7xl font-light text-white tracking-tight leading-[1.1]"
             >
-              The Aurora <br />
-              <span className="italic metallic-text">Ecosystem</span>
+              Aurora <br />
+              <span className="italic metallic-text">Operating System</span>
             </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="mt-6 text-gray-500 text-sm font-light leading-relaxed max-w-lg tracking-wide"
+            >
+              A privacy-first, human-centered OS built on the belief that technology should adapt to people — not the other way around.
+            </motion.p>
           </div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             className="hidden md:block"
           >
-            <span className="text-[9px] uppercase tracking-[0.6em] text-gray-600 border-l border-shri-gold/20 pl-6 py-2">System v1.2.4</span>
+            <Link
+              href="/aurora"
+              className="text-[9px] uppercase tracking-[0.4em] text-shri-gold hover:text-white transition-colors duration-300 border border-shri-gold/20 px-6 py-3 rounded-full hover:bg-shri-gold/10"
+            >
+              Read the Manifesto
+            </Link>
           </motion.div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           <Card
-            title="Work In Progress"
-            desc="Developing a core engine for cognitive alignment and structural intelligence."
+            title="Privacy by Default"
+            desc="Every layer of Aurora is architected so privacy is never optional — it is the foundation. Your data belongs to you, always."
             delay={0.1}
-            isPlaceholder={true}
+            icon={
+              <svg className="w-6 h-6 text-shri-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              </svg>
+            }
           />
           <Card
-            title="Work In Progress"
-            desc="Crafting a new dimension of temporal harmony and intentional scheduling."
+            title="Simplicity Meets Power"
+            desc="An elegant interface that never gets in your way, yet puts full control at your fingertips. No compromises between beauty and flexibility."
             delay={0.3}
-            isPlaceholder={true}
+            icon={
+              <svg className="w-6 h-6 text-shri-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+            }
           />
           <Card
-            title="Expansion"
-            desc="We are crafting new tools to harmonize your digital life. More announcements coming soon."
+            title="Human-Centered Design"
+            desc="Technology that fades into the background. Aurora is built to earn trust, not demand attention — helping you create without friction."
             delay={0.5}
-            isPlaceholder={true}
+            icon={
+              <svg className="w-6 h-6 text-shri-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+              </svg>
+            }
           />
         </div>
       </div>

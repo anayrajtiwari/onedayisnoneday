@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, useSpring, useMotionValue } from "framer-motion";
+import { useEffect } from "react";
+import { useSpring, useMotionValue } from "framer-motion";
 
 export const useCursorFollower = () => {
   const cursorX = useMotionValue(-100);
@@ -18,7 +18,7 @@ export const useCursorFollower = () => {
     };
     window.addEventListener("mousemove", moveCursor);
     return () => window.removeEventListener("mousemove", moveCursor);
-  }, []);
+  }, [cursorX, cursorY]);
 
   return { cursorXSpring, cursorYSpring };
 };

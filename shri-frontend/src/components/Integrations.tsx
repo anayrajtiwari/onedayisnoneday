@@ -70,7 +70,7 @@ const Item = ({ icon: Icon, name, delay }: { icon: React.ComponentType<{ size?: 
       {/* Icon container */}
       <motion.div 
         variants={iconContainerVariants}
-        className="relative z-10 w-full h-full rounded-3xl backdrop-blur-sm border flex items-center justify-center"
+        className="relative z-10 w-full h-full rounded-3xl border flex items-center justify-center"
       >
         <Icon size={32} strokeWidth={1} />
       </motion.div>
@@ -98,6 +98,7 @@ export default function Integrations() {
           <motion.h2 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             className="text-shri-gold text-[10px] uppercase tracking-[0.8em] mb-4"
           >
             Universal Connection
@@ -105,6 +106,7 @@ export default function Integrations() {
           <motion.h3 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 1 }}
             className="text-4xl md:text-5xl font-light text-white tracking-tight"
           >

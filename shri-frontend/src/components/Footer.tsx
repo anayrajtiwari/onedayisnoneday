@@ -28,8 +28,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-shri-gold/5 flex justify-between items-center text-[8px] uppercase tracking-[0.4em] text-gray-600">
         <span>© 2026 SHRI Ecosystems</span>
         <div className="flex space-x-8">
-          <Link href="#">Privacy</Link>
-          <Link href="#">Terms</Link>
+          <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
         </div>
       </div>
     </footer>

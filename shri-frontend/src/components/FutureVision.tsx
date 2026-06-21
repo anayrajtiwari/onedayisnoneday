@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 const pillarContainerVariants = {
   initial: { opacity: 0, scale: 0.95, borderColor: "rgba(212, 175, 55, 0.1)" },
@@ -77,16 +77,14 @@ const VisionPillar = ({ title, desc, index }: { title: string; desc: string; ind
 );
 
 export default function FutureVision() {
-  const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0.4, 0.7], ["0%", "-20%"]);
-
   return (
-    <section id="products" className="py-40 relative overflow-hidden bg-shri-black/20 backdrop-blur-3xl">
+    <section id="products" className="py-40 relative overflow-hidden bg-shri-black">
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         <div className="mb-32">
           <motion.h2 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             className="text-shri-gold text-[10px] uppercase tracking-[0.8em] mb-6"
           >
             The Horizon
@@ -94,6 +92,7 @@ export default function FutureVision() {
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 1.2 }}
             className="text-6xl md:text-9xl font-light text-white tracking-tighter leading-none"
           >
@@ -102,35 +101,26 @@ export default function FutureVision() {
           </motion.h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-          <VisionPillar 
-            title="Biometric Alignment" 
-            desc="Systems that breathe with you, synchronizing your digital environment with your physiological state for effortless focus."
-            index={0}
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 max-w-4xl mx-auto">
           <VisionPillar 
             title="Structural Integrity" 
             desc="Building tools that are as beautiful internally as they are externally, ensuring longevity and trust in every interaction."
-            index={1}
+            index={0}
           />
           <VisionPillar 
             title="Cognitive Freedom" 
             desc="Offloading the mundane to allow the human spirit to flourish in realms of pure creativity and high-level strategy."
-            index={2}
+            index={1}
           />
         </div>
       </div>
       
-      {/* Interactive Background Text */}
-      <motion.div 
-        style={{ x }}
-        className="absolute bottom-0 left-0 whitespace-nowrap opacity-[0.02] pointer-events-none select-none"
-      >
+      {/* Static decorative text — no longer scroll-driven */}
+      <div className="absolute bottom-0 left-0 whitespace-nowrap opacity-[0.02] pointer-events-none select-none">
         <span className="text-[20vw] font-black uppercase tracking-tighter text-shri-gold">
-          Intention Wisdom Harmony Integrity Evolution Future
+          Intention Wisdom Harmony
         </span>
-      </motion.div>
+      </div>
     </section>
   );
 }
-

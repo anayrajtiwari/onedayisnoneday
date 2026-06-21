@@ -8,8 +8,9 @@ const connectDB = async () => {
     }
     const conn = await mongoose.connect(process.env.MONGODB_URI);
     console.log(`[DB] Connected to MongoDB: ${conn.connection.host}`);
-  } catch (error) {
-    console.error(`[DB] Connection Error: ${error.message}`);
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`[DB] Connection Error: ${message}`);
     console.warn("[DB] Proceeding without database connection...");
   }
 };
