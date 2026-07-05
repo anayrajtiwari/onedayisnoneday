@@ -8,7 +8,7 @@ const AdvancedLotus = dynamic(() => import("@/components/AdvancedLotus"), {
   ssr: false,
   loading: () => <div className="h-screen bg-shri-black" /> 
 });
-const AuroraShowcase = dynamic(() => import("@/components/AuroraShowcase"));
+const AsteraShowcase = dynamic(() => import("@/components/AsteraShowcase"));
 const FutureVision = dynamic(() => import("@/components/FutureVision"));
 const Philosophy = dynamic(() => import("@/components/Philosophy"));
 const ContactSection = dynamic(() => import("@/components/ContactSection"));
@@ -25,7 +25,7 @@ export default function Home() {
         <AdvancedLotus />
         
         <div className="relative z-10">
-          <AuroraShowcase />
+          <AsteraShowcase />
           <FutureVision />
           <Philosophy />
 

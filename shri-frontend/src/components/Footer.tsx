@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col space-y-4">
             <h4 className="text-[10px] uppercase tracking-[0.4em] text-shri-gold">Ecosystem</h4>
-            <Link href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Aurora</Link>
+            <Link href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Astera</Link>
             <Link href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Products</Link>
           </div>
         </div>

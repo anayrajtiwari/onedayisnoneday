@@ -132,28 +132,28 @@ body {
   }
 }
 
-/* ── Aurora CSS Animations (GPU-composited, off main thread) ─────── */
-.aurora-blob-1 {
-  animation: auroraBlob1 30s linear infinite;
+/* ── Astera CSS Animations (GPU-composited, off main thread) ─────── */
+.astera-blob-1 {
+  animation: asteraBlob1 30s linear infinite;
 }
-.aurora-blob-2 {
-  animation: auroraBlob2 35s linear infinite;
+.astera-blob-2 {
+  animation: asteraBlob2 35s linear infinite;
 }
-.aurora-streak-1 {
-  animation: auroraStreak1 15s ease-in-out infinite;
+.astera-streak-1 {
+  animation: asteraStreak1 15s ease-in-out infinite;
 }
 
-@keyframes auroraBlob1 {
+@keyframes asteraBlob1 {
   0%   { transform: translate(0, 0) scale(1);      opacity: 0.1; }
   50%  { transform: translate(150px, -80px) scale(1.3); opacity: 0.25; }
   100% { transform: translate(0, 0) scale(1);      opacity: 0.1; }
 }
-@keyframes auroraBlob2 {
+@keyframes asteraBlob2 {
   0%   { transform: translate(0, 0) scale(1);      opacity: 0.1; }
   50%  { transform: translate(-200px, 100px) scale(1.15); opacity: 0.18; }
   100% { transform: translate(0, 0) scale(1);      opacity: 0.1; }
 }
-@keyframes auroraStreak1 {
+@keyframes asteraStreak1 {
   0%   { transform: translateY(-400px); opacity: 0; }
   50%  { opacity: 0.15; }
   100% { transform: translateY(400px);  opacity: 0; }
