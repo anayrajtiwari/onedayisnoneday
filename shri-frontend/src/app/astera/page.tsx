@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AsteraContent from "./AsteraContent";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Astera OS | Manifesto",
+  description: "A new paradigm for personal computing. Read the Astera Operating System manifesto for digital freedom and privacy.",
+  alternates: {
+    canonical: "https://shri.org.in/astera",
+  },
+};
 
 export default function AsteraPage() {
   return (
