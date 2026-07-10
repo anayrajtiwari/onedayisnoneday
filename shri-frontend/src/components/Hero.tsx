@@ -15,7 +15,7 @@ export default function Hero() {
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h2 className="text-shri-gold text-[10px] uppercase tracking-[0.6em] mb-6">Designed With Intention</h2>
+          <span className="block text-shri-gold text-[10px] uppercase tracking-[0.6em] mb-6">Designed With Intention</span>
           <h1 className="text-6xl md:text-8xl font-light tracking-tight leading-[1.1] text-white">
             The Future of <br />
             <span className="italic font-normal italic metallic-text">Human Ecosystems</span>
