@@ -110,10 +110,7 @@ export default function TermsPage() {
               <p>These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which SHRI operates, without regard to its conflict of law provisions.</p>
             </section>
 
-            <section>
-              <h2 className="text-2xl md:text-3xl font-light text-white mb-6 tracking-tight">10. Contact</h2>
-              <p>For questions about these terms, please contact us at legal@shri.vision.</p>
-            </section>
+
           </div>
         </div>
       </section>
