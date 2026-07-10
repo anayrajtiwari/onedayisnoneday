@@ -51,7 +51,7 @@ export default function Navbar() {
   const navItems = [
     { label: "Ecosystem", href: "/#ecosystem" },
     { label: "Astera", href: "/astera" },
-    { label: "Glyph", href: "/#glyph" },
+    { label: "Glyph", href: "/glyph" },
     { label: "Vision", href: "/#vision" },
   ];
   const communityHref = user ? "/community" : "/auth/signin?callbackUrl=/community";
