@@ -1,5 +1,14 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Read the Terms of Service of SHRI Hari Research & Innovations.",
+  alternates: {
+    canonical: "https://shri.org.in/terms",
+  },
+};
 
 export default function TermsPage() {
   return (
