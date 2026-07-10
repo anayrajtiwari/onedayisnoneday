@@ -132,15 +132,15 @@ export default function AsteraShowcase() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
-            <motion.h2
+            <motion.span
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-shri-gold text-[10px] uppercase tracking-[0.8em] mb-6"
+              className="block text-shri-gold text-[10px] uppercase tracking-[0.8em] mb-6"
             >
               Flagship Product
-            </motion.h2>
-            <motion.h1
+            </motion.span>
+            <motion.h2
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -149,7 +149,7 @@ export default function AsteraShowcase() {
             >
               Astera <br />
               <span className="italic metallic-text">Operating System</span>
-            </motion.h1>
+            </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
