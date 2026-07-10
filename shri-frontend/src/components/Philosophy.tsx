@@ -16,11 +16,11 @@ export default function Philosophy() {
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h2 className="text-shri-gold text-[10px] uppercase tracking-[0.8em] mb-8">Founding Vision</h2>
-            <h3 className="text-4xl md:text-6xl font-light leading-[1.1] text-white mb-10">
+            <span className="block text-shri-gold text-[10px] uppercase tracking-[0.8em] mb-8">Founding Vision</span>
+            <h2 className="text-4xl md:text-6xl font-light leading-[1.1] text-white mb-10">
               Architecture of <br />
               <span className="metallic-text italic">Intentional Harmony</span>
-            </h3>
+            </h2>
 
             <div className="space-y-6 text-gray-400 font-light leading-relaxed tracking-wide text-sm md:text-base">
               <p>
