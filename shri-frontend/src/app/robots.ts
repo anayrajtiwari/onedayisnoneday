@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://shri.vision/sitemap.xml',
+    sitemap: 'https://shri.org.in/sitemap.xml',
   }
 }
