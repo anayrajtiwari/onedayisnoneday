@@ -87,9 +87,9 @@ export default function ContactSection() {
             className="mb-12 flex items-center gap-4"
           >
             <div className="h-[1px] w-12 bg-shri-gold/20"></div>
-            <h3 className="text-shri-gold text-[10px] uppercase tracking-[0.8em] whitespace-nowrap">
+             <h2 className="text-shri-gold text-[10px] uppercase tracking-[0.8em] whitespace-nowrap">
               Join the Movement
-            </h3>
+            </h2>
             <div className="h-[1px] w-12 bg-shri-gold/20"></div>
           </motion.div>
 
