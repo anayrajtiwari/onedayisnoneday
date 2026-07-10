@@ -102,7 +102,6 @@ export default function PrivacyPage() {
                   <li>Data portability</li>
                   <li>Withdraw consent at any time</li>
                 </ul>
-                <p>To exercise any of these rights, please contact us at privacy@shri.vision.</p>
               </div>
             </section>
 
@@ -111,10 +110,7 @@ export default function PrivacyPage() {
               <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the updated policy on this page and updating the &ldquo;Last updated&rdquo; date.</p>
             </section>
 
-            <section>
-              <h2 className="text-2xl md:text-3xl font-light text-white mb-6 tracking-tight">8. Contact</h2>
-              <p>If you have questions about this Privacy Policy or our data practices, please contact us at privacy@shri.vision.</p>
-            </section>
+
           </div>
         </div>
       </section>
