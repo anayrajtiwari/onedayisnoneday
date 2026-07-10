@@ -7,6 +7,10 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shri.org.in"),
+  alternates: {
+    canonical: "https://shri.org.in",
+  },
   title: {
     default: "SHRI | The Future of Human Ecosystems",
     template: "%s | SHRI"
@@ -58,14 +62,40 @@ export default function RootLayout({
 }) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "SHRI",
-    "url": "https://shri.org.in",
-    "logo": "https://shri.org.in/logo.png",
-    "description": "The intersection of sacred geometry and futuristic engineering, building products like Astera OS and Glyph-CLI.",
-    "sameAs": [
-      "https://twitter.com/shri_vision",
-      "https://instagram.com/shri_vision"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://shri.org.in/#organization",
+        "name": "SHRI",
+        "url": "https://shri.org.in",
+        "logo": "https://shri.org.in/logo.png",
+        "description": "The intersection of sacred geometry and futuristic engineering, building products like Astera OS and Glyph-CLI.",
+        "founder": {
+          "@type": "Person",
+          "@id": "https://anay.shri.org.in/#person",
+          "name": "Anay Raj Tiwari",
+          "url": "https://anay.shri.org.in"
+        },
+        "sameAs": [
+          "https://twitter.com/shri_vision",
+          "https://instagram.com/shri_vision"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://anay.shri.org.in/#person",
+        "name": "Anay Raj Tiwari",
+        "url": "https://anay.shri.org.in",
+        "sameAs": [
+          "https://x.com/__anay___",
+          "https://www.instagram.com/anayrajtiwari/",
+          "https://github.com/anayrajtiwari"
+        ],
+        "jobTitle": "Builder & Founder",
+        "worksFor": {
+          "@id": "https://shri.org.in/#organization"
+        }
+      }
     ]
   };
 
