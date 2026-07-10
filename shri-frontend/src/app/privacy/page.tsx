@@ -1,5 +1,14 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Read the Privacy Policy of SHRI Hari Research & Innovations.",
+  alternates: {
+    canonical: "https://shri.org.in/privacy",
+  },
+};
 
 export default function PrivacyPage() {
   return (
