@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Glyph-CLI | Documentation Engine",
   description: "A minimal, zero-dependency Markdown/MDX documentation compiler and local hot-rebuilding preview server.",
   keywords: ["Glyph-CLI", "Docflow", "Developer Tools", "Static Compiler", "Markdown documentation", "MDX compiler", "SHRI Product"],
+  alternates: {
+    canonical: "https://shri.org.in/glyph",
+  },
 };
 
 export default function GlyphPage() {
