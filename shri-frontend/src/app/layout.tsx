@@ -11,17 +11,17 @@ export const metadata: Metadata = {
     default: "SHRI | The Future of Human Ecosystems",
     template: "%s | SHRI"
   },
-  description: "Experience the intersection of sacred geometry and futuristic engineering. SHRI is the nexus of digital harmony and structural intelligence.",
-  keywords: ["Sacred Geometry", "Futuristic Engineering", "Human Ecosystems", "Digital Harmony", "Structural Intelligence", "Luxury Tech"],
+  description: "Experience the intersection of sacred geometry and futuristic engineering. SHRI is the nexus of digital harmony, developer tools like Glyph-CLI, and Astera Operating System.",
+  keywords: ["Sacred Geometry", "Futuristic Engineering", "Human Ecosystems", "Digital Harmony", "Structural Intelligence", "Luxury Tech", "Glyph-CLI", "Glyph", "Docflow", "Developer Tools", "Astera OS"],
   authors: [{ name: "SHRI Team" }],
   creator: "SHRI",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://shri.vision",
+    url: "https://shri.org.in",
     siteName: "SHRI",
     title: "SHRI | The Future of Human Ecosystems",
-    description: "Experience the intersection of sacred geometry and futuristic engineering.",
+    description: "Experience the intersection of sacred geometry and futuristic engineering, building tools like Glyph-CLI and Astera OS.",
     images: [
       {
         url: "/og-image.png", // Assuming this will be added or handled by Vercel OG
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SHRI | The Future of Human Ecosystems",
-    description: "Experience the intersection of sacred geometry and futuristic engineering.",
+    description: "Experience the intersection of sacred geometry and futuristic engineering, building tools like Glyph-CLI and Astera OS.",
     images: ["/og-image.png"],
     creator: "@shri_vision",
   },
@@ -60,9 +60,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "SHRI",
-    "url": "https://shri.vision",
-    "logo": "https://shri.vision/logo.png",
-    "description": "The intersection of sacred geometry and futuristic engineering.",
+    "url": "https://shri.org.in",
+    "logo": "https://shri.org.in/logo.png",
+    "description": "The intersection of sacred geometry and futuristic engineering, building products like Astera OS and Glyph-CLI.",
     "sameAs": [
       "https://twitter.com/shri_vision",
       "https://instagram.com/shri_vision"
