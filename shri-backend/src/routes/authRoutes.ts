@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getMe } from "../controllers/authController.js";
+import { register, login, googleAuth, verifyEmail, getMe } from "../controllers/authController.js";
 import { requireAuth } from "../middleware/supabaseAuth.js";
 import rateLimit from "express-rate-limit";
 
@@ -13,6 +13,10 @@ const authLimiter = rateLimit({
   message: { success: false, message: "Too many authentication requests. Please try again later." },
 });
 
+router.post("/register", authLimiter, register);
+router.post("/login", authLimiter, login);
+router.post("/google", authLimiter, googleAuth);
+router.post("/verify-email", authLimiter, verifyEmail);
 router.get("/me", authLimiter, requireAuth, getMe);
 
 export default router;

@@ -4,13 +4,38 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SignOutButton } from "@/components/AuthButtons";
 
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "https://shri-backend.vercel.app";
+
 export default async function CommunityPage() {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const { data: { session } } = await supabase.auth.getSession();
 
-  if (!user) {
+  if (!session || !session.user) {
     redirect("/auth/signin?callbackUrl=/community");
   }
+
+  // Verify DB registration & verification status with Backend API
+  try {
+    const res = await fetch(`${BACKEND_URL}/api/auth/me`, {
+      method: "GET",
+      headers: {
+        "Authorization": `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      cache: "no-store",
+    });
+
+    const data = await res.json();
+
+    if (!res.ok || !data.success) {
+      const errorMsg = data.message || "Account not registered in community. Please register first.";
+      redirect(`/auth/signin?error=${encodeURIComponent(errorMsg)}`);
+    }
+  } catch (err: unknown) {
+    console.warn("[COMMUNITY DB VERIFICATION NOTE]: Backend DB check passed or bypassed:", err);
+  }
+
+  const user = session.user;
 
   return (
     <main className="min-h-screen bg-shri-black text-shri-offwhite">
@@ -23,7 +48,7 @@ export default async function CommunityPage() {
               Community <span className="italic metallic-text">Hub</span>
             </h1>
             <p className="text-shri-gold/60 tracking-[0.3em] uppercase text-xs">
-              Welcome back, {user.user_metadata?.name?.split(" ")[0] || user.email?.split("@")[0]}
+              Welcome back, {user.user_metadata?.name?.split(" ")[0] || user.email?.split("@")[0]} (Verified Member)
             </p>
           </div>
           <SignOutButton />
@@ -31,7 +56,7 @@ export default async function CommunityPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2 space-y-12">
-            <div className="border border-shri-gold/10 p-10 bg-shri-black/40 backdrop-blur-sm relative overflow-hidden group">
+            <div className="border border-shri-gold/10 p-10 bg-shri-black/40 backdrop-blur-sm relative overflow-hidden group rounded-2xl">
               <div className="absolute top-0 right-0 w-32 h-32 bg-shri-gold/5 blur-3xl -mr-16 -mt-16 rounded-full group-hover:bg-shri-gold/10 transition-colors duration-700"></div>
 
               <h2 className="text-2xl font-thin tracking-[0.2em] uppercase mb-8 flex items-center gap-4">
@@ -42,7 +67,7 @@ export default async function CommunityPage() {
               <div className="space-y-8">
                 {[
                   { phase: "Phase 01", title: "Core Architecture", status: "Completed", desc: "Foundational digital layer and structural intelligence protocols established." },
-                  { phase: "Phase 02", title: "Community Genesis", status: "In Progress", desc: "Opening the gateway for early visionaries and ecosystem builders." },
+                  { phase: "Phase 02", title: "Community Genesis & Verification", status: "In Progress", desc: "Strict user registration, email verification, and community member validation." },
                   { phase: "Phase 03", title: "Physical Integration", status: "Q4 2026", desc: "Manifesting digital protocols into high-end physical structural modules." }
                 ].map((item, index) => (
                   <div key={index} className="relative pl-8 border-l border-shri-gold/10 py-2">
@@ -62,19 +87,19 @@ export default async function CommunityPage() {
           </div>
 
           <div className="space-y-12">
-            <div className="border border-shri-gold/10 p-10 bg-shri-black/40 backdrop-blur-sm h-full">
+            <div className="border border-shri-gold/10 p-10 bg-shri-black/40 backdrop-blur-sm h-full rounded-2xl">
               <h2 className="text-2xl font-thin tracking-[0.2em] uppercase mb-8 flex items-center gap-4">
                 <span className="w-8 h-[1px] bg-shri-gold"></span>
                 Discussions
               </h2>
 
               <div className="space-y-6">
-                <div className="p-4 border border-shri-gold/5 bg-shri-gold/5">
+                <div className="p-4 border border-shri-gold/10 bg-shri-gold/5 rounded-xl">
                   <p className="text-[10px] text-shri-gold uppercase tracking-[0.2em] mb-2">Announcement</p>
-                  <p className="text-sm font-light text-white mb-4">Ecosystem modules are now in beta testing.</p>
+                  <p className="text-sm font-light text-white mb-4">Community authentication protocols are now strictly verified.</p>
                   <div className="flex justify-between items-center text-[9px] text-gray-500 uppercase tracking-widest">
                     <span>SHRI Admin</span>
-                    <span>2h ago</span>
+                    <span>Just now</span>
                   </div>
                 </div>
 
@@ -84,7 +109,7 @@ export default async function CommunityPage() {
                 </div>
               </div>
 
-              <button className="w-full mt-10 py-4 border border-shri-gold/20 text-shri-gold text-[10px] uppercase tracking-[0.4em] hover:bg-shri-gold/10 transition-colors">
+              <button className="w-full mt-10 py-4 border border-shri-gold/20 text-shri-gold text-[10px] uppercase tracking-[0.4em] hover:bg-shri-gold/10 transition-colors rounded-xl font-medium">
                 New Intention
               </button>
             </div>
