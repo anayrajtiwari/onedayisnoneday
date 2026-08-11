@@ -81,6 +81,7 @@ export default function RootLayout({
         "name": "SHRI",
         "legalName": "Shri Hari Research & Innovations Corporation",
         "url": "https://shri.org.in",
+        "logo": "https://shri.org.in/shri.jpeg",
         "description": "The intersection of sacred geometry and futuristic engineering, building products like Astera OS and Glyph-CLI.",
         "founder": {
           "@type": "Person",

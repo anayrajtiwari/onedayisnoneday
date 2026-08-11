@@ -64,9 +64,9 @@ export default function Navbar() {
             <motion.div
               whileHover={{ rotate: 5, scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center"
+              className="flex items-center justify-center relative w-9 h-9 rounded-full overflow-hidden border border-shri-gold/40 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
             >
-              <LotusLogo />
+              <Image src="/shri.jpeg" alt="SHRI Logo" width={36} height={36} className="object-cover w-full h-full" />
             </motion.div>
             <span className="text-2xl font-bold tracking-[0.2em] text-white italic">SHRI</span>
           </Link>
