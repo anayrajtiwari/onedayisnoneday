@@ -62,16 +62,16 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-3 group">
             <motion.div
-              whileHover={{ rotate: 3, scale: 1.05 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center relative w-10 h-10 rounded-xl overflow-hidden border border-shri-gold/40 shadow-[0_0_20px_rgba(212,175,55,0.25)] bg-shri-black"
+              className="flex items-center justify-center relative h-10 w-auto rounded-lg overflow-hidden border border-shri-gold/40 shadow-[0_0_20px_rgba(212,175,55,0.25)] bg-shri-black"
             >
               <Image
                 src="/shri.jpeg"
                 alt="SHRI Logo"
-                width={40}
+                width={60}
                 height={40}
-                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                className="h-10 w-auto object-contain rounded-lg group-hover:scale-105 transition-transform duration-500"
                 priority
               />
             </motion.div>
