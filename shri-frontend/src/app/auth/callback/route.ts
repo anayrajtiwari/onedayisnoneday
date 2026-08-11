@@ -17,7 +17,7 @@ export async function GET(request: Request) {
     if (!error && session?.user?.email) {
       // Sync Google / OAuth user with community backend database
       try {
-        const res = await fetch(`${BACKEND_URL}/api/auth/google`, {
+        const res = await fetch(`${origin}/api/auth/google`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

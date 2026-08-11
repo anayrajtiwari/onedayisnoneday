@@ -37,7 +37,7 @@ function SignInContent() {
     // REGISTER MODE
     if (mode === "signup") {
       try {
-        const res = await fetch(`${BACKEND_URL}/api/auth/register`, {
+        const res = await fetch("/api/auth/register", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -74,7 +74,7 @@ function SignInContent() {
 
     // LOGIN MODE — STRICT DATABASE VERIFICATION
     try {
-      const res = await fetch(`${BACKEND_URL}/api/auth/login`, {
+      const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
