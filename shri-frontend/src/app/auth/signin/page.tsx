@@ -4,6 +4,7 @@ import React, { useState, Suspense } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Eye, EyeOff, ArrowRight, Loader2 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useSupabase } from "@/components/Providers";
 
@@ -137,7 +138,13 @@ function SignInContent() {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute inset-0 bg-shri-gold/20 blur-2xl rounded-full"
               />
-              <LotusIcon />
+              <Image
+                src="/shri.jpeg"
+                alt="SHRI Logo"
+                width={64}
+                height={64}
+                className="w-16 h-16 rounded-2xl object-cover border border-shri-gold/40 shadow-[0_0_25px_rgba(212,175,55,0.3)] relative z-10"
+              />
             </div>
           </motion.div>
 
