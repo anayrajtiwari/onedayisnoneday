@@ -12,8 +12,49 @@ export const metadata: Metadata = {
 };
 
 export default function AsteraPage() {
+  const asteraJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://shri.org.in/astera#software",
+        "name": "Astera Operating System",
+        "alternateName": "Astera OS",
+        "applicationCategory": "OperatingSystem",
+        "operatingSystem": "Astera OS",
+        "description": "A new paradigm for personal computing centered on digital freedom, zero surveillance, and structural intelligence by SHRI.",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://shri.org.in/#organization",
+          "name": "SHRI"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://shri.org.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Astera OS",
+            "item": "https://shri.org.in/astera"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-shri-black text-shri-offwhite">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(asteraJsonLd) }}
+      />
       <Navbar />
 
       <section className="relative pt-40 pb-20 px-8 overflow-hidden">

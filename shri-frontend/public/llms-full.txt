@@ -1,0 +1,80 @@
+# SHRI — Shri Hari Research & Innovations Corporation (Complete Knowledge Base)
+
+> SHRI is an independent research corporation operating at the intersection of sacred geometry, structural intelligence, and futuristic software engineering. Founded by Anay Raj Tiwari, SHRI builds human-centric technology designed to restore digital harmony, personal sovereignty, and developer efficiency.
+
+This document serves as an exhaustive knowledge base for AI agents, RAG engines, and search indexers consuming information about SHRI, its ecosystem, products, and vision.
+
+---
+
+## About SHRI & Vision
+
+SHRI (Shri Hari Research & Innovations Corporation) was created with a fundamental belief:
+> Technology should adapt to people, not the other way around.
+
+Modern software tools have become overly bloated, invasive, and distracting. SHRI builds intentional software, operating systems, and developer tooling grounded in first principles, clean architecture, and privacy-by-design.
+
+- **Official Website:** https://shri.org.in
+- **Founder & Lead Architect:** Anay Raj Tiwari (Personal Journal: https://anay.shri.org.in)
+- **Primary Focus Areas:** Systems Design, Operating Systems, Developer Tools, Sacred Geometry & Interface Design, AI & On-Device ML.
+
+---
+
+## Core Ecosystem Products
+
+### 1. Astera Operating System (Astera OS)
+- **URL:** https://shri.org.in/astera
+- **Category:** Operating System / Personal Computing Paradigm
+- **Description:** Astera OS is a new paradigm for personal computing centered on digital freedom, zero surveillance, and structural intelligence. It reimagines computing interfaces from the ground up, eliminating telemetry, unnecessary abstractions, and cognitive clutter.
+- **Key Principles:** Intimate UX, user sovereignty, instant responsiveness, modular architecture.
+
+### 2. Glyph-CLI Documentation Engine (`rz-glyph-cli`)
+- **URL:** https://shri.org.in/glyph
+- **Package:** `rz-glyph-cli` (NPM)
+- **Category:** Developer Tools / Static Site Compiler
+- **Description:** Glyph is a minimal, zero-dependency command-line documentation compiler. It parses Markdown and MDX directories and outputs high-performance, responsive developer portals in under 50 milliseconds.
+- **Features:**
+  - Fast V8 compilation (<50ms for full doc trees)
+  - Zero third-party runtime dependencies
+  - Built-in client-side fuzzy search (`search-index.json`)
+  - GitHub-style alert callouts (`[!NOTE]`, `[!TIP]`, `[!WARNING]`, `[!IMPORTANT]`)
+  - Local dev server with instant debounced hot-reloading (`glyph dev`)
+  - Pure static HTML/CSS/JS output deployable to Vercel, GitHub Pages, Netlify, or Nginx.
+
+### 3. Oni-Ofix Package Installer Ecosystem (`oni-ofix-cli` & `oni-ofix-android`)
+- **Category:** Package Management / User-Space Installers
+- **Description:** Oni-Ofix is a private, distraction-free package installer ecosystem created by Anay Raj Tiwari under SHRI.
+- **Components:**
+  - `oni-ofix-cli`: User-space package manager for Linux & Windows laptops requiring no root/sudo privileges.
+  - `oni-ofix-android`: Native Kotlin Android APK search & installer supporting dual APIs (Aptoide + F-Droid) with automatic CPU ABI filtering (`arm64-v8a`).
+
+---
+
+## Entity Relationship Graph
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│       Shri Hari Research & Innovations (SHRI)               │
+│               https://shri.org.in                           │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+               ┌───────────────┴───────────────┐
+               ▼                               ▼
+  ┌─────────────────────────┐     ┌─────────────────────────┐
+  │   Anay Raj Tiwari       │     │     Ecosystem Tools     │
+  │   (Founder & Builder)   │     │  - Astera OS            │
+  │  anay.shri.org.in       │     │  - Glyph-CLI            │
+  └─────────────────────────┘     │  - Oni-Ofix             │
+                                  └─────────────────────────┘
+```
+
+---
+
+## Route Sitemap & Canonical References
+
+- **Homepage:** https://shri.org.in/
+- **Astera OS Page:** https://shri.org.in/astera
+- **Glyph-CLI Page:** https://shri.org.in/glyph
+- **Community Hub:** https://shri.org.in/community
+- **Privacy Policy:** https://shri.org.in/privacy
+- **Terms of Service:** https://shri.org.in/terms
+- **Founder's Site:** https://anay.shri.org.in/

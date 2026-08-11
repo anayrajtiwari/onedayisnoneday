@@ -13,8 +13,56 @@ export const metadata: Metadata = {
 };
 
 export default function GlyphPage() {
+  const glyphJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["SoftwareApplication", "SoftwareSourceCode"],
+        "@id": "https://shri.org.in/glyph#software",
+        "name": "Glyph-CLI",
+        "alternateName": "rz-glyph-cli",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Linux, macOS, Windows",
+        "description": "A minimal, zero-dependency Markdown and MDX documentation compiler and local hot-rebuilding preview server built by SHRI.",
+        "programmingLanguage": "JavaScript",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://shri.org.in/#organization",
+          "name": "SHRI"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://shri.org.in"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Glyph-CLI",
+            "item": "https://shri.org.in/glyph"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-shri-black text-shri-offwhite">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(glyphJsonLd) }}
+      />
       <Navbar />
 
       <section className="relative pt-40 pb-20 px-8 overflow-hidden">

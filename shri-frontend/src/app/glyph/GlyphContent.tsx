@@ -118,6 +118,69 @@ export default function GlyphContent() {
         ))}
       </div>
 
+      {/* Interactive Official Documentation Explorer Section */}
+      <motion.div variants={itemVariants} className="mt-32 border-t border-shri-gold/10 pt-20">
+        <div className="text-center mb-16">
+          <span className="text-shri-gold text-[10px] uppercase tracking-[0.6em]">Official Manual</span>
+          <h2 className="text-4xl md:text-5xl font-light text-white mt-4 tracking-tight">
+            Glyph <span className="italic metallic-text font-light">Documentation</span>
+          </h2>
+          <p className="text-gray-500 text-xs tracking-widest font-light mt-2 max-w-xl mx-auto uppercase">
+            Complete guide to building, configuring, and publishing static developer documentation hubs.
+          </p>
+        </div>
+
+        <div className="glass rounded-[2rem] p-8 md:p-12 border border-shri-gold/20 space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 border-b border-shri-gold/10 pb-6">
+            <div className="p-4 rounded-xl border border-shri-gold/20 bg-shri-gold/5 space-y-2">
+              <span className="text-shri-gold text-xs font-mono tracking-widest font-bold">1. BUILD DOCS</span>
+              <p className="text-gray-400 text-xs leading-relaxed font-light">
+                <code className="text-shri-gold font-mono">node bin/compiler.js build</code>
+                <br />
+                Compiles <code className="text-gray-300 font-mono">docs/</code> to static production HTML &amp; search indexes.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl border border-shri-gold/20 bg-shri-gold/5 space-y-2">
+              <span className="text-shri-gold text-xs font-mono tracking-widest font-bold">2. DEV PREVIEW</span>
+              <p className="text-gray-400 text-xs leading-relaxed font-light">
+                <code className="text-shri-gold font-mono">node bin/compiler.js dev 3000</code>
+                <br />
+                Runs live local preview server at <code className="text-gray-300 font-mono">localhost:3000</code> with auto-reload.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl border border-shri-gold/20 bg-shri-gold/5 space-y-2">
+              <span className="text-shri-gold text-xs font-mono tracking-widest font-bold">3. FRONTMATTER</span>
+              <p className="text-gray-400 text-xs leading-relaxed font-light">
+                Add YAML header: <code className="text-gray-300 font-mono">title</code>, <code className="text-gray-300 font-mono">description</code>, <code className="text-gray-300 font-mono">order</code> to customize sidebar navigation.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl border border-shri-gold/20 bg-shri-gold/5 space-y-2">
+              <span className="text-shri-gold text-xs font-mono tracking-widest font-bold">4. CALLOUT ALERTS</span>
+              <p className="text-gray-400 text-xs leading-relaxed font-light">
+                Supports <code className="text-shri-gold font-mono">[!NOTE]</code>, <code className="text-shri-gold font-mono">[!TIP]</code>, <code className="text-shri-gold font-mono">[!WARNING]</code> blockquotes rendered as glowing cards.
+              </p>
+            </div>
+          </div>
+
+          <div className="p-6 rounded-xl bg-black/60 border border-shri-gold/10 font-mono text-xs text-gray-300 space-y-3">
+            <div className="text-shri-gold/70">// Sample Markdown File (docs/getting-started.md)</div>
+            <div className="text-gray-500">---</div>
+            <div className="text-shri-gold font-semibold">title: &quot;Getting Started&quot;</div>
+            <div className="text-gray-300">description: &quot;Learn how to configure your Glyph documentation pipeline.&quot;</div>
+            <div className="text-amber-300">order: 1</div>
+            <div className="text-gray-500">---</div>
+            <br />
+            <div className="text-white text-sm font-sans font-bold"># Quick Start Guide</div>
+            <div className="text-gray-400 font-sans leading-relaxed">
+              Welcome to Glyph. Edit files inside <code className="text-shri-gold">docs/</code> to update your portal instantly.
+            </div>
+            <div className="p-3 rounded border border-shri-gold/30 bg-shri-gold/10 font-sans text-xs text-shri-gold">
+              &gt; [!NOTE] Built with zero dependencies for maximum speed.
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
       <motion.div
         variants={itemVariants}
         className="mt-40 text-center border-t border-shri-gold/10 pt-20"

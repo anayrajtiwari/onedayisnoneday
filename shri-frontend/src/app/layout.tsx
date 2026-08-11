@@ -64,11 +64,23 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://shri.org.in/#website",
+        "url": "https://shri.org.in",
+        "name": "SHRI",
+        "alternateName": "Shri Hari Research & Innovations Corporation",
+        "description": "Experience the intersection of sacred geometry and futuristic engineering, building tools like Glyph-CLI and Astera OS.",
+        "publisher": {
+          "@id": "https://shri.org.in/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
         "@type": "Organization",
         "@id": "https://shri.org.in/#organization",
         "name": "SHRI",
+        "legalName": "Shri Hari Research & Innovations Corporation",
         "url": "https://shri.org.in",
-        "logo": "https://shri.org.in/logo.png",
         "description": "The intersection of sacred geometry and futuristic engineering, building products like Astera OS and Glyph-CLI.",
         "founder": {
           "@type": "Person",
@@ -78,7 +90,8 @@ export default function RootLayout({
         },
         "sameAs": [
           "https://twitter.com/shri_vision",
-          "https://instagram.com/shri_vision"
+          "https://instagram.com/shri_vision",
+          "https://github.com/anayrajtiwari"
         ]
       },
       {
