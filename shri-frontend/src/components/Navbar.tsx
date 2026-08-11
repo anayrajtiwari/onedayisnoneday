@@ -60,22 +60,21 @@ export default function Navbar() {
     <>
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "py-4 bg-shri-black/80 backdrop-blur-md border-b border-shri-gold/10" : "py-8 bg-transparent"}`}>
         <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
-          <Link href="/" className="flex items-center space-x-3 group">
+          <Link href="/" className="flex items-center group">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center relative h-10 w-auto rounded-lg overflow-hidden border border-shri-gold/40 shadow-[0_0_20px_rgba(212,175,55,0.25)] bg-shri-black"
+              className="flex items-center justify-center relative h-10 md:h-12 w-auto"
             >
               <Image
                 src="/shri.jpeg"
-                alt="SHRI Logo"
-                width={60}
-                height={40}
-                className="h-10 w-auto object-contain rounded-lg group-hover:scale-105 transition-transform duration-500"
+                alt="SHRI"
+                width={120}
+                height={48}
+                className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 mix-blend-screen"
                 priority
               />
             </motion.div>
-            <span className="text-2xl font-bold tracking-[0.2em] text-white italic">SHRI</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-12">
