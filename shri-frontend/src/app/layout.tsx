@@ -19,6 +19,14 @@ export const metadata: Metadata = {
   keywords: ["Sacred Geometry", "Futuristic Engineering", "Human Ecosystems", "Digital Harmony", "Structural Intelligence", "Luxury Tech", "Glyph-CLI", "Glyph", "Docflow", "Developer Tools", "Astera OS"],
   authors: [{ name: "SHRI Team" }],
   creator: "SHRI",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -28,7 +36,7 @@ export const metadata: Metadata = {
     description: "Experience the intersection of sacred geometry and futuristic engineering, building tools like Glyph-CLI and Astera OS.",
     images: [
       {
-        url: "/og-image.png", // Assuming this will be added or handled by Vercel OG
+        url: "https://shri.org.in/og-image.png",
         width: 1200,
         height: 630,
         alt: "SHRI - The Future of Human Ecosystems",
@@ -39,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SHRI | The Future of Human Ecosystems",
     description: "Experience the intersection of sacred geometry and futuristic engineering, building tools like Glyph-CLI and Astera OS.",
-    images: ["/og-image.png"],
+    images: ["https://shri.org.in/og-image.png"],
     creator: "@shri_vision",
   },
   robots: {
