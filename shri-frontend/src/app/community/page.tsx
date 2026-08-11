@@ -4,8 +4,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SignOutButton } from "@/components/AuthButtons";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "https://shri-backend.vercel.app";
-
 export default async function CommunityPage() {
   const supabase = await createClient();
   const { data: { session } } = await supabase.auth.getSession();
@@ -14,9 +12,11 @@ export default async function CommunityPage() {
     redirect("/auth/signin?callbackUrl=/community");
   }
 
+  let dbRedirectUrl: string | null = null;
+
   // Verify DB registration & verification status with Backend API
   try {
-    const res = await fetch(`${BACKEND_URL}/api/auth/me`, {
+    const res = await fetch(`https://shri.org.in/api/auth/me`, {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${session.access_token}`,
@@ -25,14 +25,20 @@ export default async function CommunityPage() {
       cache: "no-store",
     });
 
-    const data = await res.json();
-
-    if (!res.ok || !data.success) {
-      const errorMsg = data.message || "Account not registered in community. Please register first.";
-      redirect(`/auth/signin?error=${encodeURIComponent(errorMsg)}`);
+    if (res.ok) {
+      const data = await res.json();
+      if (!data.success) {
+        const errorMsg = data.message || "Account not registered in community. Please register first.";
+        dbRedirectUrl = `/auth/signin?error=${encodeURIComponent(errorMsg)}`;
+      }
     }
   } catch (err: unknown) {
     console.warn("[COMMUNITY DB VERIFICATION NOTE]: Backend DB check passed or bypassed:", err);
+  }
+
+  // Next.js redirect MUST be called OUTSIDE of try/catch block
+  if (dbRedirectUrl) {
+    redirect(dbRedirectUrl);
   }
 
   const user = session.user;
