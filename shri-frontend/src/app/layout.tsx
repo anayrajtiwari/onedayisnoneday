@@ -98,10 +98,12 @@ export default function RootLayout({
         "@type": "Person",
         "@id": "https://anay.shri.org.in/#person",
         "name": "Anay Raj Tiwari",
+        "alternateName": ["anayrajtiwari", "Anay Tiwari", "@anayrajtiwari"],
         "url": "https://anay.shri.org.in",
         "sameAs": [
-          "https://x.com/__anay___",
           "https://www.instagram.com/anayrajtiwari/",
+          "https://instagram.com/anayrajtiwari",
+          "https://x.com/__anay___",
           "https://github.com/anayrajtiwari"
         ],
         "jobTitle": "Builder & Founder",
