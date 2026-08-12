@@ -4,10 +4,13 @@ import { connectDB } from "@/lib/db";
 import { User } from "@/models/User";
 import { createClient } from "@supabase/supabase-js";
 
-const JWT_SECRET: string = process.env.JWT_SECRET || "shri_jwt_secret_key_2026_safe";
+const JWT_SECRET: string = process.env.JWT_SECRET || process.env.SUPABASE_JWT_SECRET || "shri_jwt_secret_key_2026_safe";
 
-const supabaseAdmin = process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY
-  ? createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY)
+const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY;
+
+const supabaseAdmin = supabaseUrl && supabaseServiceKey
+  ? createClient(supabaseUrl, supabaseServiceKey)
   : null;
 
 export async function GET(req: Request) {
