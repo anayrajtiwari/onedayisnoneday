@@ -17,7 +17,13 @@ export async function POST(req: Request) {
       );
     }
 
-    await connectDB();
+    const db = await connectDB();
+    if (!db) {
+      return NextResponse.json(
+        { success: false, message: "Database connection unavailable. Please check MONGODB_URI credentials." },
+        { status: 503 }
+      );
+    }
 
     const normalizedEmail = email.toLowerCase().trim();
 

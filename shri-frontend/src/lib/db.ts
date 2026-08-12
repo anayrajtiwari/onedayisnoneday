@@ -4,7 +4,7 @@ const MONGODB_URI = process.env.MONGODB_URI || process.env.NEXT_PUBLIC_MONGODB_U
 
 interface MongooseCache {
   conn: typeof mongoose | null;
-  promise: Promise<typeof mongoose | null> | null;
+  promise: Promise<typeof mongoose> | null;
 }
 
 declare global {
@@ -18,29 +18,28 @@ if (!global.mongooseCache) {
 }
 
 export async function connectDB() {
-  if (cached.conn) {
+  if (cached.conn && mongoose.connection.readyState === 1) {
     return cached.conn;
   }
 
   if (!MONGODB_URI || MONGODB_URI.includes("<db_password>")) {
-    console.warn("[DB WARNING]: MONGODB_URI is missing or contains placeholder '<db_password>'. Please update MONGODB_URI in Vercel.");
+    console.warn("[DB WARNING]: MONGODB_URI is missing or contains placeholder '<db_password>'.");
     return null;
   }
 
   if (!cached.promise) {
     cached.promise = mongoose.connect(MONGODB_URI, {
-      bufferCommands: false,
-    }).then((m) => m).catch((err) => {
-      console.warn("[DB CONNECTION ERROR]:", err.message);
-      return null;
-    });
+      bufferCommands: true,
+      serverSelectionTimeoutMS: 5000,
+    }).then((m) => m);
   }
 
   try {
     cached.conn = await cached.promise;
   } catch (e) {
     cached.promise = null;
-    console.warn("[DB CONNECTION EXCEPTION]:", e);
+    cached.conn = null;
+    console.warn("[DB CONNECTION ERROR]:", e);
     return null;
   }
 

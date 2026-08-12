@@ -26,7 +26,13 @@ export async function GET(req: Request) {
 
     const token = authHeader.split(" ")[1];
 
-    await connectDB();
+    const db = await connectDB();
+    if (!db) {
+      return NextResponse.json(
+        { success: false, message: "Database connection unavailable." },
+        { status: 503 }
+      );
+    }
 
     let userEmail: string | null = null;
 
