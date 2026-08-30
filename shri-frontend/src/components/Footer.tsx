@@ -9,19 +9,27 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
         <div>
           <h2 className="text-2xl font-bold tracking-[0.2em] text-white italic mb-2">SHRI</h2>
-          <p className="text-gray-500 text-xs tracking-widest uppercase">The Intentional Ecosystem</p>
+          <p className="text-gray-500 text-xs tracking-widest uppercase">Bringing Worlds Together</p>
         </div>
         
-        <div className="mt-12 md:mt-0 flex space-x-16">
+        <div className="mt-12 md:mt-0 flex flex-wrap gap-12 sm:gap-16">
           <div className="flex flex-col space-y-4">
-            <h4 className="text-[10px] uppercase tracking-[0.4em] text-shri-gold">Company</h4>
-            <Link href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Philosophy</Link>
-            <Link href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Vision</Link>
+            <h4 className="text-[10px] uppercase tracking-[0.4em] text-shri-gold">Divisions</h4>
+            <Link href="/#divisions" className="text-xs text-gray-500 hover:text-white transition-colors">Software</Link>
+            <Link href="/#ela" className="text-xs text-gray-500 hover:text-white transition-colors">Hardware (ELA)</Link>
+            <Link href="/#agency" className="text-xs text-gray-500 hover:text-white transition-colors">Agency & SEO</Link>
+            <Link href="/#finance" className="text-xs text-gray-500 hover:text-white transition-colors">Finance (Planning)</Link>
           </div>
           <div className="flex flex-col space-y-4">
             <h4 className="text-[10px] uppercase tracking-[0.4em] text-shri-gold">Ecosystem</h4>
-            <Link href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Astera</Link>
-            <Link href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Products</Link>
+            <Link href="/astera" className="text-xs text-gray-500 hover:text-white transition-colors">Astera OS</Link>
+            <Link href="/glyph" className="text-xs text-gray-500 hover:text-white transition-colors">Glyph-CLI</Link>
+            <Link href="/community" className="text-xs text-gray-500 hover:text-white transition-colors">Community Hub</Link>
+          </div>
+          <div className="flex flex-col space-y-4">
+            <h4 className="text-[10px] uppercase tracking-[0.4em] text-shri-gold">Company</h4>
+            <Link href="/#vision" className="text-xs text-gray-500 hover:text-white transition-colors">Philosophy</Link>
+            <a href="https://anay.shri.org.in" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-white transition-colors">Founder&apos;s Journal</a>
           </div>
         </div>
       </div>

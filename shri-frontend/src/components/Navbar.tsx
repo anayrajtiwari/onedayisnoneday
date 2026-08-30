@@ -49,7 +49,9 @@ export default function Navbar() {
   }, [showUserMenu]);
 
   const navItems = [
-    { label: "Ecosystem", href: "/#ecosystem" },
+    { label: "Divisions", href: "/#divisions" },
+    { label: "Hardware", href: "/#ela" },
+    { label: "Agency", href: "/#agency" },
     { label: "Astera", href: "/astera" },
     { label: "Glyph", href: "/glyph" },
     { label: "Vision", href: "/#vision" },

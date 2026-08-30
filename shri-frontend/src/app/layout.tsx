@@ -12,11 +12,25 @@ export const metadata: Metadata = {
     canonical: "https://shri.org.in",
   },
   title: {
-    default: "SHRI | The Future of Human Ecosystems",
+    default: "SHRI | Bringing Worlds Together",
     template: "%s | SHRI"
   },
-  description: "Experience the intersection of sacred geometry and futuristic engineering. SHRI is the nexus of digital harmony, developer tools like Glyph-CLI, and Astera Operating System.",
-  keywords: ["Sacred Geometry", "Futuristic Engineering", "Human Ecosystems", "Digital Harmony", "Structural Intelligence", "Luxury Tech", "Glyph-CLI", "Glyph", "Docflow", "Developer Tools", "Astera OS"],
+  description: "Shri Hari Research & Innovations Corporation — an interdisciplinary institution uniting software engineering, physical hardware, online presence agency, and strategic capital.",
+  keywords: [
+    "Bringing Worlds Together",
+    "SHRI",
+    "Shri Hari Research Innovations",
+    "Hardware",
+    "Electronics",
+    "SHRI ELA",
+    "Digital Presence Agency",
+    "SEO Optimization",
+    "Social Media Management",
+    "Astera OS",
+    "Glyph-CLI",
+    "Quantitative Finance",
+    "Systems Architecture"
+  ],
   authors: [{ name: "SHRI Team" }],
   creator: "SHRI",
   icons: {
@@ -32,21 +46,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://shri.org.in",
     siteName: "SHRI",
-    title: "SHRI | The Future of Human Ecosystems",
-    description: "Experience the intersection of sacred geometry and futuristic engineering, building tools like Glyph-CLI and Astera OS.",
+    title: "SHRI | Bringing Worlds Together",
+    description: "An interdisciplinary institution uniting software engineering, physical hardware, online presence agency, and strategic capital.",
     images: [
       {
         url: "https://shri.org.in/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SHRI - The Future of Human Ecosystems",
+        alt: "SHRI - Bringing Worlds Together",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SHRI | The Future of Human Ecosystems",
-    description: "Experience the intersection of sacred geometry and futuristic engineering, building tools like Glyph-CLI and Astera OS.",
+    title: "SHRI | Bringing Worlds Together",
+    description: "An interdisciplinary institution uniting software engineering, physical hardware, online presence agency, and strategic capital.",
     images: ["https://shri.org.in/og-image.png"],
     creator: "@shri_vision",
   },
@@ -77,7 +91,7 @@ export default function RootLayout({
         "url": "https://shri.org.in",
         "name": "SHRI",
         "alternateName": "Shri Hari Research & Innovations Corporation",
-        "description": "Experience the intersection of sacred geometry and futuristic engineering, building tools like Glyph-CLI and Astera OS.",
+        "description": "Shri Hari Research & Innovations Corporation — an interdisciplinary institution uniting software engineering, physical hardware, online presence agency, and strategic capital.",
         "publisher": {
           "@id": "https://shri.org.in/#organization"
         },
@@ -90,7 +104,7 @@ export default function RootLayout({
         "legalName": "Shri Hari Research & Innovations Corporation",
         "url": "https://shri.org.in",
         "logo": "https://shri.org.in/shri.jpeg",
-        "description": "The intersection of sacred geometry and futuristic engineering, building products like Astera OS and Glyph-CLI.",
+        "description": "An interdisciplinary institution uniting software engineering, physical hardware, digital presence agency, and strategic capital.",
         "founder": {
           "@type": "Person",
           "@id": "https://anay.shri.org.in/#person",

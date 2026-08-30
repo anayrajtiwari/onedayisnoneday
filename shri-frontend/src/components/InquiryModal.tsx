@@ -4,7 +4,14 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
-const CATEGORIES = ["Bug Report", "Question / Help", "Feedback", "Business Inquiry", "General Contact"];
+const CATEGORIES = [
+  "Agency / Online Presence (SEO & Socials)",
+  "Hardware & Electronics (SHRI ELA)",
+  "Software & Developer Tools",
+  "Business & Investment",
+  "Bug Report / Feedback",
+  "General Inquiry"
+];
 
 export default function InquiryModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
