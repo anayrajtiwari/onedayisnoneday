@@ -58,7 +58,10 @@ const divisions = [
 
 export default function DivisionsSection() {
   return (
-    <section id="divisions" className="py-32 px-8 relative overflow-hidden bg-shri-black">
+    <section id="divisions" className="py-32 px-8 relative overflow-hidden bg-shri-black border-t border-shri-gold/10">
+      {/* Ambient background glow to eliminate abrupt cutoffs */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-80 bg-gradient-to-b from-shri-gold/[0.05] via-purple-500/[0.02] to-transparent blur-3xl pointer-events-none" />
+
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-20">
           <motion.span
@@ -91,7 +94,7 @@ export default function DivisionsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: idx * 0.15 }}
-                className="group relative rounded-3xl border border-shri-gold/10 bg-shri-black/60 backdrop-blur-md p-8 sm:p-10 flex flex-col justify-between overflow-hidden hover:border-shri-gold/30 transition-all duration-500"
+                className="group relative rounded-3xl border border-shri-gold/10 bg-[#080808]/80 backdrop-blur-xl p-8 sm:p-10 flex flex-col justify-between overflow-hidden hover:border-shri-gold/30 hover:bg-[#0c0c0c]/90 transition-all duration-500 shadow-[0_8px_32px_rgba(0,0,0,0.6)]"
               >
                 {/* Subtle Ambient Background Gradient */}
                 <div
