@@ -24,13 +24,13 @@ export default function Philosophy() {
 
             <div className="space-y-6 text-gray-400 font-light leading-relaxed tracking-wide text-sm md:text-base">
               <p>
-                SHRI was born from a singular realization: that the structures we inhabit - whether physical or digital - dictate the quality of our collective consciousness. In an era of fragmented noise, we saw the need for a sanctuary of order.
+                SHRI was born from a singular realization: that the systems we interact with — whether software environments, tangible hardware gadgets, or digital identities — dictate the quality of human focus and sovereignty.
               </p>
               <p>
-                Our vision is to bridge the gap between ancient wisdom and futuristic engineering. By applying the principles of sacred geometry to modern human ecosystems, we create environments that don&apos;t just function, but breathe.
+                Our vision is to bridge the boundaries of technology. By applying first principles to systems engineering, physical computing, and digital presence, we build tools that don&apos;t just function, but genuinely empower.
               </p>
               <p>
-                We believe that design is not a luxury, but a biological necessity. Every line we draw and every system we build is an act of intention, aimed at restoring the resonance between humanity and the technology it creates.
+                We believe that intentional craft is not an afterthought, but the foundation. Every gadget we prototype, line of code we write, and presence we build is an act of intention aimed at bringing worlds together.
               </p>
             </div>
 
@@ -83,9 +83,9 @@ export default function Philosophy() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5, delay: 0.3 }}
-            className="text-2xl md:text-4xl font-extralight text-white leading-relaxed tracking-tight italic"
+            className="text-2xl md:text-4xl font-extralight text-white leading-relaxed tracking-tight italic max-w-4xl mx-auto"
           >
-            &ldquo;We do not build software. We craft <span className="metallic-text font-normal">digital habitats</span> where the human mind can find its natural resonance.&rdquo;
+            &ldquo;We do not simply build systems. We weave the <span className="metallic-text font-normal">threads between worlds</span>—uniting software, physical hardware, and digital presence into effortless harmony.&rdquo;
           </motion.p>
 
           <motion.div
