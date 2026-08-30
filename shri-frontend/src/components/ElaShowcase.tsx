@@ -38,7 +38,7 @@ export default function ElaShowcase() {
               transition={{ duration: 1, delay: 0.3 }}
               className="mt-6 text-gray-500 text-sm font-light leading-relaxed max-w-lg tracking-wide"
             >
-              Exploring physical computing, embedded micro-architectures, and hardware prototypes. Built to bring structural intelligence into tangible reality.
+              Building electronic gadgets and physical computing devices from first principles, progressing from foundational basics to intermediate prototypes.
             </motion.p>
           </div>
 
@@ -62,10 +62,10 @@ export default function ElaShowcase() {
             </div>
             <div className="h-[1px] w-12 bg-shri-gold/40 mb-6" />
             <h3 className="text-2xl font-light text-white mb-4 tracking-wide group-hover:text-shri-gold transition-colors">
-              Embedded Architectures
+              Gadget Prototyping
             </h3>
             <p className="text-gray-400 text-sm font-light leading-relaxed">
-              Designing custom microcontroller logic, low-level firmware, and energy-efficient sensory nodes with zero bloat.
+              Crafting tangible electronic gadgets and interactive devices, experimenting with hands-on hardware builds from the basics to intermediate complexities.
             </p>
           </div>
 
@@ -75,10 +75,10 @@ export default function ElaShowcase() {
             </div>
             <div className="h-[1px] w-12 bg-shri-gold/40 mb-6" />
             <h3 className="text-2xl font-light text-white mb-4 tracking-wide group-hover:text-shri-gold transition-colors">
-              Circuit Prototyping
+              Embedded Microcontrollers
             </h3>
             <p className="text-gray-400 text-sm font-light leading-relaxed">
-              From schematic formulation to PCB design and signal routing, crafting intentional electronic devices from the physical layer up.
+              Programming microcontrollers, interfacing sensors, and creating responsive embedded systems with clean, zero-bloat firmware.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export default function ElaShowcase() {
               Physical-Digital Synergy
             </h3>
             <p className="text-gray-400 text-sm font-light leading-relaxed">
-              Seamlessly integrating tangible hardware with Astera OS and local computing ecosystems for complete hardware-software harmony.
+              Seamlessly integrating tangible hardware gadgets with Astera OS and local software environments for unified user experiences.
             </p>
           </div>
         </div>

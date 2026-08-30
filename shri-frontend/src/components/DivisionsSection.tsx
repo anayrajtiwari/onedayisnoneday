@@ -21,12 +21,12 @@ const divisions = [
   {
     id: "02",
     title: "Hardware & Electronics",
-    subtitle: "Physical Computing & Instruments",
+    subtitle: "Physical Computing & Gadgets",
     description:
-      "Bridging the physical-digital divide with custom embedded electronics, micro-architectures, and hardware labs centered on the SHRI ELA-(BETA) project.",
+      "Bridging the physical-digital divide by crafting electronic gadgets and physical computing devices from basic to intermediate levels under the SHRI ELA-(BETA) initiative.",
     icon: Cpu,
     status: "SHRI ELA-(BETA)",
-    tags: ["Embedded Systems", "Circuit Prototyping", "Hardware Labs", "ELA-(BETA)"],
+    tags: ["Electronic Gadgets", "Physical Computing", "Microcontrollers", "ELA-(BETA)"],
     link: "#ela",
     color: "from-amber-500/10 to-transparent",
   },
@@ -37,8 +37,8 @@ const divisions = [
     description:
       "Crafting unmistakable online identities. Managing social media ecosystems, search engine optimization (SEO), content syndication, and high-impact digital presence for visionaries.",
     icon: Globe,
-    status: "Client Engagements Open",
-    tags: ["Social Media Management", "SEO Optimization", "Digital Authority", "Brand Strategy"],
+    status: "Starting This December",
+    tags: ["Social Media Management", "SEO Optimization", "Digital Authority", "Starting December"],
     link: "#inquire",
     color: "from-purple-500/10 to-transparent",
   },

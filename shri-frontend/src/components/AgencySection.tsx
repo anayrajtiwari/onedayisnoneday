@@ -13,14 +13,14 @@ export default function AgencySection() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
-            <motion.span
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="block text-shri-gold text-[10px] uppercase tracking-[0.8em] mb-6"
-            >
-              Strategic Creative Studio
-            </motion.span>
+            <div className="flex flex-wrap items-center gap-3 mb-6">
+              <span className="text-shri-gold text-[10px] uppercase tracking-[0.8em]">
+                Strategic Creative Studio
+              </span>
+              <span className="text-[9px] font-mono tracking-widest px-3 py-1 rounded-full border border-shri-gold/40 text-shri-gold bg-shri-gold/10 uppercase">
+                Starting This December
+              </span>
+            </div>
             <motion.h2
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -38,7 +38,7 @@ export default function AgencySection() {
               transition={{ duration: 1, delay: 0.3 }}
               className="mt-6 text-gray-500 text-sm font-light leading-relaxed max-w-lg tracking-wide"
             >
-              Helping high-conviction brands, founders, and enterprises conquer their digital frontiers with bespoke social media management, organic SEO, and commanding online presence.
+              Helping high-conviction brands, founders, and enterprises conquer their digital frontiers with bespoke social media management, organic SEO, and commanding online presence. Launching this December.
             </motion.p>
           </div>
 
@@ -51,7 +51,7 @@ export default function AgencySection() {
               href="#inquire"
               className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-shri-gold hover:text-white transition-colors duration-300 border border-shri-gold/30 px-7 py-3.5 rounded-full hover:bg-shri-gold/10"
             >
-              <span>Retain Our Agency</span>
+              <span>Engage Agency (Dec 2026)</span>
               <ArrowUpRight size={14} />
             </a>
           </motion.div>
