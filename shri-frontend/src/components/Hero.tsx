@@ -15,22 +15,27 @@ export default function Hero() {
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="block text-shri-gold text-[10px] uppercase tracking-[0.6em] mb-6">Research & Innovations Corporation</span>
+          <span className="block text-shri-gold text-[10px] uppercase tracking-[0.6em] mb-6">A Thread</span>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-light tracking-tight leading-[1.05] text-white">
             Bringing Worlds <br />
             <span className="italic font-normal metallic-text">Together.</span>
           </h1>
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, delay: 0.6 }}
-          className="mt-8 text-gray-400 text-sm md:text-base max-w-xl mx-auto font-light leading-relaxed tracking-wide"
+          className="mt-8 max-w-xl mx-auto"
         >
-          An interdisciplinary institution uniting software engineering, physical hardware, digital presence agency, and future capital systems into harmonious ecosystems.
-        </motion.p>
+          <span className="block text-shri-gold text-xs uppercase tracking-[0.35em] mb-3 font-normal">
+            An Initiative By Anay Raj Tiwari
+          </span>
+          <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed tracking-wide">
+            An interdisciplinary institution uniting software engineering, physical hardware, digital presence agency, and future capital systems into harmonious ecosystems.
+          </p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 10 }}

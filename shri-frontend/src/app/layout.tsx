@@ -15,9 +15,15 @@ export const metadata: Metadata = {
     default: "SHRI | Bringing Worlds Together",
     template: "%s | SHRI"
   },
-  description: "Shri Hari Research & Innovations Corporation — an interdisciplinary institution uniting software engineering, physical hardware, online presence agency, and strategic capital.",
+  description: "An interdisciplinary institution founded by Anay Raj Tiwari uniting software engineering, physical hardware gadgets (SHRI ELA), digital presence agency, and strategic capital.",
   keywords: [
+    "Anay Raj Tiwari",
+    "Anay Tiwari",
+    "Founder Anay Raj Tiwari",
+    "An Initiative By Anay Raj Tiwari",
     "Bringing Worlds Together",
+    "A Thread Bringing Worlds Together",
+    "A Thread",
     "SHRI",
     "Shri Hari Research Innovations",
     "Hardware",
@@ -31,8 +37,12 @@ export const metadata: Metadata = {
     "Quantitative Finance",
     "Systems Architecture"
   ],
-  authors: [{ name: "SHRI Team" }],
-  creator: "SHRI",
+  authors: [
+    { name: "Anay Raj Tiwari", url: "https://anay.shri.org.in" },
+    { name: "SHRI Team" }
+  ],
+  creator: "Anay Raj Tiwari",
+  publisher: "Shri Hari Research & Innovations Corporation",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
@@ -46,23 +56,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://shri.org.in",
     siteName: "SHRI",
-    title: "SHRI | Bringing Worlds Together",
-    description: "An interdisciplinary institution uniting software engineering, physical hardware, online presence agency, and strategic capital.",
+    title: "SHRI | Bringing Worlds Together — Founded by Anay Raj Tiwari",
+    description: "An interdisciplinary institution founded by Anay Raj Tiwari uniting software engineering, physical hardware, online presence agency, and strategic capital.",
     images: [
       {
         url: "https://shri.org.in/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SHRI - Bringing Worlds Together",
+        alt: "SHRI - Bringing Worlds Together by Anay Raj Tiwari",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SHRI | Bringing Worlds Together",
-    description: "An interdisciplinary institution uniting software engineering, physical hardware, online presence agency, and strategic capital.",
+    title: "SHRI | Bringing Worlds Together — Founded by Anay Raj Tiwari",
+    description: "An interdisciplinary institution founded by Anay Raj Tiwari uniting software engineering, physical hardware, online presence agency, and strategic capital.",
     images: ["https://shri.org.in/og-image.png"],
-    creator: "@shri_vision",
+    creator: "@__anay___",
   },
   robots: {
     index: true,

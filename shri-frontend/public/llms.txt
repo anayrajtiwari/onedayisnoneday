@@ -1,26 +1,34 @@
 # SHRI — Shri Hari Research & Innovations Corporation
 
-> The intersection of sacred geometry and futuristic engineering. SHRI is an independent research initiative building human-centric technology, structural intelligence, and open developer tooling.
+> Bringing Worlds Together. An interdisciplinary institution uniting software engineering, electronic hardware gadgets, digital presence agency, and strategic capital.
 
-This document provides a concise index of SHRI ecosystem resources for AI search engines, LLM agents, and RAG indexers.
+This document provides a concise index of SHRI corporate divisions, ecosystem resources, and products for AI search engines, LLM agents, and RAG indexers.
+
+## Corporate Divisions
+
+- **Software & Systems:** Privacy-first operating systems (Astera OS), zero-dependency documentation compilers (`rz-glyph-cli`), and user-space tooling (`oni-ofix-cli`).
+- **Hardware & Electronics (SHRI ELA-(BETA)):** Building tangible electronic gadgets, physical computing devices, and embedded microcontroller instruments from basic to intermediate levels.
+- **Agency & Digital Presence:** Social media ecosystem management, technical SEO search authority, brand positioning, and bespoke web craft (Initiative launching December 2026).
+- **Quantitative Finance:** Foundational research on future capital allocation and algorithmic value models (Planning Phase).
 
 ## Core Pages & Products
 
-- [SHRI Home](https://shri.org.in/): Official portal, manifesto, and ecosystem overview.
+- [SHRI Home](https://shri.org.in/): Official corporate portal, manifesto, and divisions overview.
 - [Astera Operating System](https://shri.org.in/astera): Manifesto for digital freedom, privacy-first personal computing, and structural intelligence.
 - [Glyph-CLI Documentation Engine](https://shri.org.in/glyph): Minimal, zero-dependency static-site compiler (`rz-glyph-cli`) for Markdown/MDX documentation portals.
-- [Founder & Founder Journal](https://anay.shri.org.in): Personal journal, project logs, and philosophy of Anay Raj Tiwari (Founder of SHRI).
+- [Community Hub](https://shri.org.in/community): Verified community portal, announcements, and vision roadmap.
+- [Founder & Builder Journal](https://anay.shri.org.in): Personal journal, project logs, and engineering reflections of Anay Raj Tiwari (Founder of SHRI).
 
 ## Organization Details
 
-- **Organization Name:** Shri Hari Research & Innovations Corporation (SHRI)
-- **Founder:** Anay Raj Tiwari
+- **Legal Entity:** Shri Hari Research & Innovations Corporation (SHRI)
+- **Slogan / Manifesto:** A Thread — Bringing Worlds Together
+- **Founder & Principal Architect:** Anay Raj Tiwari
 - **Primary Domain:** https://shri.org.in
-- **Personal Log Domain:** https://anay.shri.org.in
-- **Key Open Source Projects:** Glyph-CLI (`rz-glyph-cli`), Oni-Ofix (`oni-ofix-cli`), Astera OS
+- **Founder Domain:** https://anay.shri.org.in
+- **Key Projects & Open Source:** Glyph-CLI (`rz-glyph-cli`), Oni-Ofix (`oni-ofix-cli`), Astera OS, SHRI ELA-(BETA)
 
-## Optional
+## Legal & Compliance
 
-- [Community Hub](https://shri.org.in/community): Vision roadmap and community gateway.
 - [Terms of Service](https://shri.org.in/terms): Legal terms and policies.
-- [Privacy Policy](https://shri.org.in/privacy): Data privacy commitments.
+- [Privacy Policy](https://shri.org.in/privacy): Data privacy commitments and sanctuary protocols.
