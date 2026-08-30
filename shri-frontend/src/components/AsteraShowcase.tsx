@@ -126,7 +126,7 @@ const Card = ({ title, desc, icon, delay }: { title: string; desc: string; icon:
 
 export default function AsteraShowcase() {
   return (
-    <section id="astera" className="py-40 px-8 relative overflow-hidden bg-shri-black">
+    <section id="astera" className="py-40 px-8 relative overflow-hidden border-t border-shri-gold/5">
       <DynamicAstera />
 
       <div className="max-w-7xl mx-auto relative z-10">

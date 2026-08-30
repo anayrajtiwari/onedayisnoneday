@@ -78,7 +78,7 @@ const VisionPillar = ({ title, desc, index }: { title: string; desc: string; ind
 
 export default function FutureVision() {
   return (
-    <section id="products" className="py-40 relative overflow-hidden bg-shri-black">
+    <section id="products" className="py-40 relative overflow-hidden border-t border-shri-gold/5">
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         <div className="mb-32">
           <motion.h2 

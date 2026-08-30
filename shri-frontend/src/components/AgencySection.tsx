@@ -6,7 +6,7 @@ import { Sparkles, TrendingUp, Search, Share2, ArrowUpRight } from "lucide-react
 
 export default function AgencySection() {
   return (
-    <section id="agency" className="py-40 px-8 relative overflow-hidden bg-shri-black border-t border-shri-gold/5">
+    <section id="agency" className="py-40 px-8 relative overflow-hidden border-t border-shri-gold/5">
       {/* Background ambient light */}
       <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-purple-500/5 blur-[120px] rounded-full pointer-events-none" />
 

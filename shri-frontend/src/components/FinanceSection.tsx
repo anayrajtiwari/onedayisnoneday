@@ -6,7 +6,7 @@ import { TrendingUp, Clock } from "lucide-react";
 
 export default function FinanceSection() {
   return (
-    <section id="finance" className="py-28 px-8 relative overflow-hidden bg-shri-black border-t border-shri-gold/5">
+    <section id="finance" className="py-28 px-8 relative overflow-hidden border-t border-shri-gold/5">
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

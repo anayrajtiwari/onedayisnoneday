@@ -58,7 +58,7 @@ const divisions = [
 
 export default function DivisionsSection() {
   return (
-    <section id="divisions" className="py-32 px-8 relative overflow-hidden bg-shri-black border-t border-shri-gold/10">
+    <section id="divisions" className="py-32 px-8 relative overflow-hidden border-t border-shri-gold/10">
       {/* Ambient background glow to eliminate abrupt cutoffs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-80 bg-gradient-to-b from-shri-gold/[0.05] via-purple-500/[0.02] to-transparent blur-3xl pointer-events-none" />
 

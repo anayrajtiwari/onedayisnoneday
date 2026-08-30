@@ -4,10 +4,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import dynamic from "next/dynamic";
 // Lazy load heavy visual components
-const AdvancedLotus = dynamic(() => import("@/components/AdvancedLotus"), { 
-  ssr: false,
-  loading: () => <div className="h-screen bg-shri-black" /> 
-});
+import AdvancedLotus from "@/components/AdvancedLotus";
 const DivisionsSection = dynamic(() => import("@/components/DivisionsSection"));
 const AsteraShowcase = dynamic(() => import("@/components/AsteraShowcase"));
 const GlyphShowcase = dynamic(() => import("@/components/GlyphShowcase"));
@@ -21,15 +18,15 @@ const Footer = dynamic(() => import("@/components/Footer"));
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-shri-black text-shri-offwhite selection:bg-shri-gold selection:text-shri-black overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      
-      {/* Background animation for sections below hero */}
-      <div className="relative">
-        <AdvancedLotus />
+    <main className="min-h-screen bg-shri-black text-shri-offwhite selection:bg-shri-gold selection:text-shri-black overflow-x-hidden relative">
+      {/* Seamless global background rotation */}
+      <AdvancedLotus />
+
+      <div className="relative z-10">
+        <Navbar />
+        <Hero />
         
-        <div className="relative z-10" id="ecosystem">
+        <div id="ecosystem">
           <DivisionsSection />
           <AsteraShowcase />
           <GlyphShowcase />
@@ -38,12 +35,11 @@ export default function Home() {
           <FinanceSection />
           <FutureVision />
           <Philosophy />
-
           <ContactSection />
         </div>
+        
+        <Footer />
       </div>
-      
-      <Footer />
     </main>
   );
 }

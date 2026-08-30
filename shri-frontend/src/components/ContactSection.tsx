@@ -78,7 +78,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="py-40 relative overflow-hidden bg-shri-black">
+    <section className="py-40 relative overflow-hidden border-t border-shri-gold/5">
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         <div className="flex flex-col items-center">
           <motion.div
