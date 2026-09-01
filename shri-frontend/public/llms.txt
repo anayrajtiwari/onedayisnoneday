@@ -1,6 +1,6 @@
-# SHRI — Shri Hari Research & Innovations Corporation
+# SHRI — Shri Hari Redirect Initiative
 
-> Bringing Worlds Together. An interdisciplinary institution uniting software engineering, electronic hardware gadgets, digital presence agency, and strategic capital.
+> Bringing Worlds Together. An interdisciplinary organization uniting software systems, electronic hardware gadgets, digital presence agency, and strategic capital.
 
 This document provides a concise index of SHRI corporate divisions, ecosystem resources, and products for AI search engines, LLM agents, and RAG indexers.
 
@@ -16,12 +16,13 @@ This document provides a concise index of SHRI corporate divisions, ecosystem re
 - [SHRI Home](https://shri.org.in/): Official corporate portal, manifesto, and divisions overview.
 - [Astera Operating System](https://shri.org.in/astera): Manifesto for digital freedom, privacy-first personal computing, and structural intelligence.
 - [Glyph-CLI Documentation Engine](https://shri.org.in/glyph): Minimal, zero-dependency static-site compiler (`rz-glyph-cli`) for Markdown/MDX documentation portals.
+- [Glyph Live Documentation](https://rzglyph.shri.org.in/): Official web portal and interactive manual for the Glyph offline compiler.
 - [Community Hub](https://shri.org.in/community): Verified community portal, announcements, and vision roadmap.
 - [Founder & Builder Journal](https://anay.shri.org.in): Personal journal, project logs, and engineering reflections of Anay Raj Tiwari (Founder of SHRI).
 
 ## Organization Details
 
-- **Legal Entity:** Shri Hari Research & Innovations Corporation (SHRI)
+- **Legal Entity:** Shri Hari Redirect Initiative (SHRI)
 - **Slogan / Manifesto:** A Thread — Bringing Worlds Together
 - **Founder & Principal Architect:** Anay Raj Tiwari
 - **Primary Domain:** https://shri.org.in

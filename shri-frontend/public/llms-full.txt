@@ -1,6 +1,6 @@
-# SHRI — Shri Hari Research & Innovations Corporation (Complete Knowledge Base)
+# SHRI — Shri Hari Redirect Initiative (Complete Knowledge Base)
 
-> SHRI is an independent research corporation operating at the intersection of sacred geometry, structural intelligence, and futuristic software engineering. Founded by Anay Raj Tiwari, SHRI builds human-centric technology designed to restore digital harmony, personal sovereignty, and developer efficiency.
+> SHRI is an independent initiative operating at the intersection of sacred geometry, structural intelligence, and futuristic software engineering. Founded by Anay Raj Tiwari, SHRI builds human-centric technology designed to restore digital harmony, personal sovereignty, and developer efficiency.
 
 This document serves as an exhaustive knowledge base for AI agents, RAG engines, and search indexers consuming information about SHRI, its ecosystem, products, and vision.
 
@@ -8,7 +8,7 @@ This document serves as an exhaustive knowledge base for AI agents, RAG engines,
 
 ## About SHRI & Vision
 
-SHRI (Shri Hari Research & Innovations Corporation) was created with a fundamental belief:
+SHRI (Shri Hari Redirect Initiative) was created with a fundamental belief:
 > Technology should adapt to people, not the other way around.
 
 Modern software tools have become overly bloated, invasive, and distracting. SHRI builds intentional software, operating systems, and developer tooling grounded in first principles, clean architecture, and privacy-by-design.
@@ -29,15 +29,16 @@ Modern software tools have become overly bloated, invasive, and distracting. SHR
 
 ### 2. Glyph-CLI Documentation Engine (`rz-glyph-cli`)
 - **URL:** https://shri.org.in/glyph
+- **Live Docs Portal:** https://rzglyph.shri.org.in
 - **Package:** `rz-glyph-cli` (NPM)
 - **Category:** Developer Tools / Static Site Compiler
-- **Description:** Glyph is a minimal, zero-dependency command-line documentation compiler. It parses Markdown and MDX directories and outputs high-performance, responsive developer portals in under 50 milliseconds.
+- **Description:** Glyph is a minimal, zero-dependency command-line documentation compiler. It parses Markdown and MDX directories and outputs high-performance, responsive developer portals without external API dependencies.
 - **Features:**
-  - Fast V8 compilation (<50ms for full doc trees)
+  - Fast V8 compilation (under 50ms for measured test doc trees)
   - Zero third-party runtime dependencies
   - Built-in client-side fuzzy search (`search-index.json`)
   - GitHub-style alert callouts (`[!NOTE]`, `[!TIP]`, `[!WARNING]`, `[!IMPORTANT]`)
-  - Local dev server with instant debounced hot-reloading (`glyph dev`)
+  - Local dev server with debounced auto-reloading (`glyph dev`)
   - Pure static HTML/CSS/JS output deployable to Vercel, GitHub Pages, Netlify, or Nginx.
 
 ### 3. Oni-Ofix Package Installer Ecosystem (`oni-ofix-cli` & `oni-ofix-android`)
@@ -53,7 +54,7 @@ Modern software tools have become overly bloated, invasive, and distracting. SHR
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│       Shri Hari Research & Innovations (SHRI)               │
+│       Shri Hari Redirect Initiative (SHRI)                  │
 │               https://shri.org.in                           │
 └──────────────────────────────┬──────────────────────────────┘
                                │
@@ -61,7 +62,7 @@ Modern software tools have become overly bloated, invasive, and distracting. SHR
                ▼                               ▼
   ┌─────────────────────────┐     ┌─────────────────────────┐
   │   Anay Raj Tiwari       │     │     Ecosystem Tools     │
-  │   (Founder & Builder)   │     │  - Astera OS            │
+  │   (Founder & Architect) │     │  - Astera OS            │
   │  anay.shri.org.in       │     │  - Glyph-CLI            │
   └─────────────────────────┘     │  - Oni-Ofix             │
                                   └─────────────────────────┘
@@ -74,6 +75,7 @@ Modern software tools have become overly bloated, invasive, and distracting. SHR
 - **Homepage:** https://shri.org.in/
 - **Astera OS Page:** https://shri.org.in/astera
 - **Glyph-CLI Page:** https://shri.org.in/glyph
+- **Glyph Live Portal:** https://rzglyph.shri.org.in/
 - **Community Hub:** https://shri.org.in/community
 - **Privacy Policy:** https://shri.org.in/privacy
 - **Terms of Service:** https://shri.org.in/terms

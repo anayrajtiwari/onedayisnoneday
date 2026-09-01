@@ -22,11 +22,25 @@ export default function AsteraPage() {
         "alternateName": "Astera OS",
         "applicationCategory": "OperatingSystem",
         "operatingSystem": "Astera OS",
-        "description": "A new paradigm for personal computing centered on digital freedom, zero surveillance, and structural intelligence by SHRI.",
+        "description": "A new paradigm for personal computing centered on digital freedom, zero surveillance, and structural intelligence by Anay Raj Tiwari under SHRI (Shri Hari Redirect Initiative).",
         "author": {
+          "@type": "Person",
+          "@id": "https://anay.shri.org.in/#person",
+          "name": "Anay Raj Tiwari",
+          "url": "https://anay.shri.org.in"
+        },
+        "creator": {
+          "@type": "Person",
+          "@id": "https://anay.shri.org.in/#person",
+          "name": "Anay Raj Tiwari",
+          "url": "https://anay.shri.org.in"
+        },
+        "publisher": {
           "@type": "Organization",
           "@id": "https://shri.org.in/#organization",
-          "name": "SHRI"
+          "name": "SHRI",
+          "alternateName": "Shri Hari Redirect Initiative",
+          "url": "https://shri.org.in"
         }
       },
       {

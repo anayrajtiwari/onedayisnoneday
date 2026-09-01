@@ -4,9 +4,9 @@ import GlyphContent from "./GlyphContent";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Glyph-CLI | Documentation Engine",
-  description: "A minimal, zero-dependency Markdown/MDX documentation compiler and local hot-rebuilding preview server.",
-  keywords: ["Glyph-CLI", "Docflow", "Developer Tools", "Static Compiler", "Markdown documentation", "MDX compiler", "SHRI Product"],
+  title: "Glyph-CLI | Documentation Engine | SHRI",
+  description: "Glyph is a fast, local, offline MDX documentation compiler developed by SHRI that transforms Markdown and MDX into clean static HTML and CSS without external API dependencies.",
+  keywords: ["Glyph", "Glyph-CLI", "rz-glyph-cli", "MDX compiler", "documentation compiler", "offline docs", "static site compiler", "SHRI"],
   alternates: {
     canonical: "https://shri.org.in/glyph",
   },
@@ -19,23 +19,26 @@ export default function GlyphPage() {
       {
         "@type": ["SoftwareApplication", "SoftwareSourceCode"],
         "@id": "https://shri.org.in/glyph#software",
-        "name": "Glyph-CLI",
-        "alternateName": "rz-glyph-cli",
+        "name": "Glyph",
+        "alternateName": ["Glyph-CLI", "rz-glyph-cli"],
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Linux, macOS, Windows",
-        "description": "A minimal, zero-dependency Markdown and MDX documentation compiler and local hot-rebuilding preview server built by SHRI.",
+        "description": "A fast, local, offline MDX documentation compiler developed by SHRI that transforms Markdown and MDX into clean static HTML and CSS without requiring external APIs.",
         "programmingLanguage": "JavaScript",
-        "author": {
+        "creator": {
+          "@type": "Person",
+          "@id": "https://anay.shri.org.in/#person",
+          "name": "Anay Raj Tiwari",
+          "url": "https://anay.shri.org.in"
+        },
+        "publisher": {
           "@type": "Organization",
           "@id": "https://shri.org.in/#organization",
-          "name": "SHRI"
+          "name": "Shri Hari Redirect Initiative",
+          "alternateName": "SHRI",
+          "url": "https://shri.org.in"
         },
-        "offers": {
-          "@type": "Offer",
-          "price": "0.00",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        }
+        "codeRepository": "https://github.com/anayrajtiwari/glyph-cli"
       },
       {
         "@type": "BreadcrumbList",

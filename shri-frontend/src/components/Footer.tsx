@@ -8,8 +8,9 @@ export default function Footer() {
     <footer className="bg-shri-black py-20 px-8 border-t border-shri-gold/5">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
         <div>
-          <h2 className="text-2xl font-bold tracking-[0.2em] text-white italic mb-2">SHRI</h2>
-          <p className="text-gray-500 text-xs tracking-widest uppercase">Bringing Worlds Together</p>
+          <h2 className="text-2xl font-bold tracking-[0.2em] text-white italic mb-1">SHRI</h2>
+          <p className="text-gray-400 text-xs tracking-widest uppercase">Shri Hari Redirect Initiative</p>
+          <p className="text-gray-600 text-[10px] tracking-wider uppercase mt-1">A Thread — Bringing Worlds Together</p>
         </div>
         
         <div className="mt-12 md:mt-0 flex flex-wrap gap-12 sm:gap-16">
@@ -29,12 +30,12 @@ export default function Footer() {
           <div className="flex flex-col space-y-4">
             <h4 className="text-[10px] uppercase tracking-[0.4em] text-shri-gold">Company</h4>
             <Link href="/#vision" className="text-xs text-gray-500 hover:text-white transition-colors">Philosophy</Link>
-            <a href="https://anay.shri.org.in" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-white transition-colors">Founder&apos;s Journal</a>
+            <a href="https://anay.shri.org.in" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-white transition-colors">Founder&apos;s Journal (Anay Raj Tiwari)</a>
           </div>
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-shri-gold/5 flex justify-between items-center text-[8px] uppercase tracking-[0.4em] text-gray-600">
-        <span>© 2026 SHRI Ecosystems</span>
+        <span>Shri Hari Redirect Initiative (SHRI)</span>
         <div className="flex space-x-8">
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>

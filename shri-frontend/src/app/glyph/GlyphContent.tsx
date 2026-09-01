@@ -14,23 +14,23 @@ We believed that a simple wiki, developer guide, or API documentation portal sho
 That is why Glyph was built with zero dependencies. No Webpack, no heavy JavaScript runtimes, no complex bundlers. It is written using pure JavaScript to parse raw Markdown and MDX files into beautiful static pages.`,
   },
   {
-    title: "Instant Static Compilation",
+    title: "Fast Static Compilation",
     content: `A compilation pipeline built directly on top of V8.
 
-Glyph processes documents at V8 speeds — individual markdown pages compile in under 10ms, and complete directories are built into a self-contained production-ready output folder in less than 50ms.
+Under the project's measured benchmark conditions, individual markdown pages compile in under 10ms, and typical documentation directories build into a self-contained production-ready output folder in under 50ms.
 
-Simply type the command:
+Simply run the command:
 node bin/compiler.js build
 
-And the entire docs folder is transformed into static HTML, CSS, and JS ready to deploy anywhere.`,
+And the docs folder is compiled into clean static HTML, CSS, and JS ready for local use or web deployment.`,
   },
   {
     title: "Fuzzy Client-Side Search",
-    content: `Instant indexing without database services.
+    content: `Local indexing without external search services.
 
-Most modern portals require complex external search indexes like Algolia. Glyph completely eliminates this need.
+Most modern portals require complex external search indexes. Glyph eliminates external API dependencies.
 
-During compilation, Glyph extracts metadata, titles, descriptions, and plain text from your pages and packs them into a lightweight local JSON index. Users get high-performance fuzzy matching on-the-fly entirely client-side.`,
+During compilation, Glyph extracts titles, descriptions, and plain text from your pages into a lightweight local JSON index. Users get responsive fuzzy matching directly in the browser.`,
   },
   {
     title: "Live Rebuilding & Dev Server",
@@ -38,7 +38,7 @@ During compilation, Glyph extracts metadata, titles, descriptions, and plain tex
 
 Running the preview server launches a lightweight HTTP listener at localhost:3000 and watches your source documents for edits.
 
-By implementing a debounced file watcher, saving any file inside the source directory triggers a silent sub-50ms rebuild, instantly updating the browser on save.`,
+By implementing a debounced file watcher, saving any file inside the source directory triggers an automatic local rebuild, quickly refreshing your preview.`,
   },
   {
     title: "Clean Developer Aesthetics",
@@ -211,16 +211,26 @@ export default function GlyphContent() {
           </h2>
           <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-shri-gold to-transparent mx-auto mb-8" />
           <p className="text-gray-500 text-xs uppercase tracking-[0.4em] font-light max-w-sm mx-auto leading-loose mb-8">
-            Explore the public documentation repository, installation guide, and examples on GitHub.
+            Explore the documentation portal, installation guide, and source code on GitHub.
           </p>
-          <Link
-            href="https://github.com/anayrajtiwari/glyph-docs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex px-8 py-3 border border-shri-gold/30 text-shri-gold text-[10px] uppercase tracking-[0.3em] hover:bg-shri-gold hover:text-shri-black transition-all duration-500 rounded-full"
-          >
-            View on GitHub
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="https://rzglyph.shri.org.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex px-8 py-3 border border-shri-gold/50 text-shri-gold text-[10px] uppercase tracking-[0.3em] hover:bg-shri-gold hover:text-shri-black transition-all duration-500 rounded-full font-medium"
+            >
+              Live Docs Site
+            </Link>
+            <Link
+              href="https://github.com/anayrajtiwari/glyph-cli"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex px-8 py-3 border border-white/20 text-gray-300 text-[10px] uppercase tracking-[0.3em] hover:bg-white/10 hover:text-white transition-all duration-500 rounded-full"
+            >
+              GitHub Source
+            </Link>
+          </div>
         </div>
       </motion.div>
     </motion.div>

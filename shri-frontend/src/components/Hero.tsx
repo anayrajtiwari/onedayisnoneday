@@ -27,13 +27,13 @@ export default function Hero() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, delay: 0.6 }}
-          className="mt-8 max-w-xl mx-auto"
+          className="mt-8 max-w-2xl mx-auto"
         >
           <span className="block text-shri-gold text-xs uppercase tracking-[0.35em] mb-3 font-normal">
-            An Initiative By Anay Raj Tiwari
+            Shri Hari Redirect Initiative • Founded by <a href="https://anay.shri.org.in" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">Anay Raj Tiwari</a>
           </span>
           <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed tracking-wide">
-            An interdisciplinary institution uniting software engineering, physical hardware, digital presence agency, and future capital systems into harmonious ecosystems.
+            SHRI (Shri Hari Redirect Initiative) is an interdisciplinary organization that redirects disciplines toward human-centric paradigms — spanning software systems, physical hardware, digital presence agency, and strategic capital.
           </p>
         </motion.div>
 

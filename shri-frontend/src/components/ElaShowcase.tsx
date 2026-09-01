@@ -19,7 +19,7 @@ export default function ElaShowcase() {
               viewport={{ once: true }}
               className="block text-shri-gold text-[10px] uppercase tracking-[0.8em] mb-6"
             >
-              Hardware Innovation
+              Hardware Initiative
             </motion.span>
             <motion.h2
               initial={{ opacity: 0, x: -20 }}

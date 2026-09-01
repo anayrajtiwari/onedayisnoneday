@@ -12,29 +12,22 @@ export const metadata: Metadata = {
     canonical: "https://shri.org.in",
   },
   title: {
-    default: "SHRI | Bringing Worlds Together",
+    default: "SHRI | Shri Hari Redirect Initiative",
     template: "%s | SHRI"
   },
-  description: "An interdisciplinary institution founded by Anay Raj Tiwari uniting software engineering, physical hardware gadgets (SHRI ELA), digital presence agency, and strategic capital.",
+  description: "Shri Hari Redirect Initiative (SHRI) — an interdisciplinary organization founded by Anay Raj Tiwari uniting software systems, physical hardware, digital presence agency, and strategic capital.",
   keywords: [
     "Anay Raj Tiwari",
     "Anay Tiwari",
     "Founder Anay Raj Tiwari",
-    "An Initiative By Anay Raj Tiwari",
-    "Bringing Worlds Together",
-    "A Thread Bringing Worlds Together",
-    "A Thread",
     "SHRI",
-    "Shri Hari Research Innovations",
-    "Hardware",
-    "Electronics",
-    "SHRI ELA",
-    "Digital Presence Agency",
-    "SEO Optimization",
-    "Social Media Management",
+    "Shri Hari Redirect Initiative",
     "Astera OS",
     "Glyph-CLI",
-    "Quantitative Finance",
+    "SHRI ELA",
+    "Hardware",
+    "Electronics",
+    "Digital Presence Agency",
     "Systems Architecture"
   ],
   authors: [
@@ -42,7 +35,7 @@ export const metadata: Metadata = {
     { name: "SHRI Team" }
   ],
   creator: "Anay Raj Tiwari",
-  publisher: "Shri Hari Research & Innovations Corporation",
+  publisher: "Shri Hari Redirect Initiative",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
@@ -56,21 +49,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://shri.org.in",
     siteName: "SHRI",
-    title: "SHRI | Bringing Worlds Together — Founded by Anay Raj Tiwari",
-    description: "An interdisciplinary institution founded by Anay Raj Tiwari uniting software engineering, physical hardware, online presence agency, and strategic capital.",
+    title: "SHRI | Shri Hari Redirect Initiative — Founded by Anay Raj Tiwari",
+    description: "Shri Hari Redirect Initiative (SHRI) — an interdisciplinary organization founded by Anay Raj Tiwari uniting software systems, physical hardware, digital presence agency, and strategic capital.",
     images: [
       {
         url: "https://shri.org.in/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SHRI - Bringing Worlds Together by Anay Raj Tiwari",
+        alt: "SHRI - Shri Hari Redirect Initiative by Anay Raj Tiwari",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SHRI | Bringing Worlds Together — Founded by Anay Raj Tiwari",
-    description: "An interdisciplinary institution founded by Anay Raj Tiwari uniting software engineering, physical hardware, online presence agency, and strategic capital.",
+    title: "SHRI | Shri Hari Redirect Initiative — Founded by Anay Raj Tiwari",
+    description: "Shri Hari Redirect Initiative (SHRI) — an interdisciplinary organization founded by Anay Raj Tiwari uniting software systems, physical hardware, digital presence agency, and strategic capital.",
     images: ["https://shri.org.in/og-image.png"],
     creator: "@__anay___",
   },
@@ -100,8 +93,8 @@ export default function RootLayout({
         "@id": "https://shri.org.in/#website",
         "url": "https://shri.org.in",
         "name": "SHRI",
-        "alternateName": "Shri Hari Research & Innovations Corporation",
-        "description": "Shri Hari Research & Innovations Corporation — an interdisciplinary institution uniting software engineering, physical hardware, online presence agency, and strategic capital.",
+        "alternateName": ["Shri Hari Redirect Initiative", "SHRI Ecosystem"],
+        "description": "Shri Hari Redirect Initiative — an interdisciplinary institution founded by Anay Raj Tiwari uniting software engineering, physical hardware, online presence agency, and strategic capital.",
         "publisher": {
           "@id": "https://shri.org.in/#organization"
         },
@@ -110,16 +103,23 @@ export default function RootLayout({
       {
         "@type": "Organization",
         "@id": "https://shri.org.in/#organization",
-        "name": "SHRI",
-        "legalName": "Shri Hari Research & Innovations Corporation",
+        "name": "Shri Hari Redirect Initiative",
+        "alternateName": ["SHRI", "SHRI Ecosystem"],
+        "legalName": "Shri Hari Redirect Initiative",
         "url": "https://shri.org.in",
         "logo": "https://shri.org.in/shri.jpeg",
-        "description": "An interdisciplinary institution uniting software engineering, physical hardware, digital presence agency, and strategic capital.",
+        "description": "An interdisciplinary organization founded by Anay Raj Tiwari uniting software engineering, physical hardware, digital presence agency, and strategic capital.",
         "founder": {
           "@type": "Person",
           "@id": "https://anay.shri.org.in/#person",
           "name": "Anay Raj Tiwari",
-          "url": "https://anay.shri.org.in"
+          "url": "https://anay.shri.org.in",
+          "jobTitle": "Founder & Systems Architect",
+          "sameAs": [
+            "https://x.com/__anay___",
+            "https://instagram.com/anayrajtiwari",
+            "https://github.com/anayrajtiwari"
+          ]
         },
         "sameAs": [
           "https://twitter.com/shri_vision",
@@ -139,8 +139,11 @@ export default function RootLayout({
           "https://x.com/__anay___",
           "https://github.com/anayrajtiwari"
         ],
-        "jobTitle": "Builder & Founder",
+        "jobTitle": "Founder & Systems Architect",
         "worksFor": {
+          "@id": "https://shri.org.in/#organization"
+        },
+        "founder": {
           "@id": "https://shri.org.in/#organization"
         }
       }

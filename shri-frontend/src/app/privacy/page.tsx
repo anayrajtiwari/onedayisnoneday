@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Read the Privacy Policy of SHRI Hari Research & Innovations.",
+  description: "Read the Privacy Policy of Shri Hari Redirect Initiative.",
   alternates: {
     canonical: "https://shri.org.in/privacy",
   },
