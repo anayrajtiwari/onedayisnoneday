@@ -5,7 +5,6 @@ const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
 const URLS = [
   `https://${HOST}/`,
-  `https://${HOST}/astera`,
   `https://${HOST}/glyph`,
   `https://${HOST}/community`,
   `https://${HOST}/terms`,

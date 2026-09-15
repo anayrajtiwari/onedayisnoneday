@@ -52,7 +52,6 @@ export default function Navbar() {
     { label: "Divisions", href: "/#divisions" },
     { label: "Hardware", href: "/#ela" },
     { label: "Agency", href: "/#agency" },
-    { label: "Astera", href: "/astera" },
     { label: "Glyph", href: "/glyph" },
     { label: "Vision", href: "/#vision" },
   ];

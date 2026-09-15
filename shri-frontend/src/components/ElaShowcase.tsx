@@ -50,7 +50,7 @@ export default function ElaShowcase() {
           >
             <span className="w-2 h-2 rounded-full bg-shri-gold animate-pulse" />
             <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-shri-gold">
-              Hardware Lab in Progress
+              Under Development
             </span>
           </motion.div>
         </div>
@@ -91,7 +91,7 @@ export default function ElaShowcase() {
               Physical-Digital Synergy
             </h3>
             <p className="text-gray-400 text-sm font-light leading-relaxed">
-              Seamlessly integrating tangible hardware gadgets with Astera OS and local software environments for unified user experiences.
+              Seamlessly integrating tangible hardware gadgets with local software environments and developer toolchains for unified user experiences.
             </p>
           </div>
         </div>

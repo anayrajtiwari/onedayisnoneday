@@ -6,15 +6,14 @@ This document provides a concise index of SHRI corporate divisions, ecosystem re
 
 ## Corporate Divisions
 
-- **Software & Systems:** Privacy-first operating systems (Astera OS), zero-dependency documentation compilers (`rz-glyph-cli`), and user-space tooling (`oni-ofix-cli`).
-- **Hardware & Electronics (SHRI ELA-(BETA)):** Building tangible electronic gadgets, physical computing devices, and embedded microcontroller instruments from basic to intermediate levels.
-- **Agency & Digital Presence:** Social media ecosystem management, technical SEO search authority, brand positioning, and bespoke web craft (Initiative launching December 2026).
-- **Quantitative Finance:** Foundational research on future capital allocation and algorithmic value models (Planning Phase).
+- **Software & Systems (BETA Testing):** Zero-dependency documentation compilers (`rz-glyph-cli`), local-first developer tools, and user-space tooling (`oni-ofix-cli`).
+- **Hardware & Electronics (SHRI ELA-(BETA)):** Under Development. Building tangible electronic gadgets, physical computing devices, and embedded microcontroller instruments from basic to intermediate levels.
+- **Agency & Digital Presence:** Social media ecosystem management, technical SEO search authority, brand positioning, and bespoke web craft (Coming this October).
+- **Quantitative Finance:** Under Development. Foundational research on future capital allocation and algorithmic value models.
 
 ## Core Pages & Products
 
 - [SHRI Home](https://shri.org.in/): Official corporate portal, manifesto, and divisions overview.
-- [Astera Operating System](https://shri.org.in/astera): Manifesto for digital freedom, privacy-first personal computing, and structural intelligence.
 - [Glyph-CLI Documentation Engine](https://shri.org.in/glyph): Minimal, zero-dependency static-site compiler (`rz-glyph-cli`) for Markdown/MDX documentation portals.
 - [Glyph Live Documentation](https://rzglyph.shri.org.in/): Official web portal and interactive manual for the Glyph offline compiler.
 - [Community Hub](https://shri.org.in/community): Verified community portal, announcements, and vision roadmap.
@@ -27,7 +26,7 @@ This document provides a concise index of SHRI corporate divisions, ecosystem re
 - **Founder & Principal Architect:** Anay Raj Tiwari
 - **Primary Domain:** https://shri.org.in
 - **Founder Domain:** https://anay.shri.org.in
-- **Key Projects & Open Source:** Glyph-CLI (`rz-glyph-cli`), Oni-Ofix (`oni-ofix-cli`), Astera OS, SHRI ELA-(BETA)
+- **Key Projects & Open Source:** Glyph-CLI (`rz-glyph-cli`), Oni-Ofix (`oni-ofix-cli`), SHRI ELA-(BETA)
 
 ## Legal & Compliance
 

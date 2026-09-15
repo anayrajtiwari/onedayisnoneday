@@ -6,7 +6,6 @@ import dynamic from "next/dynamic";
 // Lazy load heavy visual components
 import AdvancedLotus from "@/components/AdvancedLotus";
 const DivisionsSection = dynamic(() => import("@/components/DivisionsSection"));
-const AsteraShowcase = dynamic(() => import("@/components/AsteraShowcase"));
 const GlyphShowcase = dynamic(() => import("@/components/GlyphShowcase"));
 const ElaShowcase = dynamic(() => import("@/components/ElaShowcase"));
 const AgencySection = dynamic(() => import("@/components/AgencySection"));
@@ -28,7 +27,6 @@ export default function Home() {
         
         <div id="ecosystem">
           <DivisionsSection />
-          <AsteraShowcase />
           <GlyphShowcase />
           <ElaShowcase />
           <AgencySection />

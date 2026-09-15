@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     "Founder Anay Raj Tiwari",
     "SHRI",
     "Shri Hari Redirect Initiative",
-    "Astera OS",
     "Glyph-CLI",
     "SHRI ELA",
     "Hardware",

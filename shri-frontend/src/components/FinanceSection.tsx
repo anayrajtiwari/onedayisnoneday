@@ -30,7 +30,7 @@ export default function FinanceSection() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-shri-gold/30 bg-shri-gold/5 my-4">
             <Clock size={12} className="text-shri-gold animate-spin" />
             <span className="font-mono text-xs uppercase tracking-widest text-shri-gold font-medium">
-              Planning Phase
+              Under Development
             </span>
           </div>
 

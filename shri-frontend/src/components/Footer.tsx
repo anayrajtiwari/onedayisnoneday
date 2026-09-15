@@ -19,11 +19,10 @@ export default function Footer() {
             <Link href="/#divisions" className="text-xs text-gray-500 hover:text-white transition-colors">Software</Link>
             <Link href="/#ela" className="text-xs text-gray-500 hover:text-white transition-colors">Hardware (ELA)</Link>
             <Link href="/#agency" className="text-xs text-gray-500 hover:text-white transition-colors">Agency & SEO</Link>
-            <Link href="/#finance" className="text-xs text-gray-500 hover:text-white transition-colors">Finance (Planning)</Link>
+            <Link href="/#finance" className="text-xs text-gray-500 hover:text-white transition-colors">Finance (Under Development)</Link>
           </div>
           <div className="flex flex-col space-y-4">
             <h4 className="text-[10px] uppercase tracking-[0.4em] text-shri-gold">Ecosystem</h4>
-            <Link href="/astera" className="text-xs text-gray-500 hover:text-white transition-colors">Astera OS</Link>
             <Link href="/glyph" className="text-xs text-gray-500 hover:text-white transition-colors">Glyph-CLI</Link>
             <Link href="/community" className="text-xs text-gray-500 hover:text-white transition-colors">Community Hub</Link>
           </div>
