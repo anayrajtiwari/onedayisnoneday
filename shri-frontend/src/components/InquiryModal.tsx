@@ -21,8 +21,9 @@ export default function InquiryModal({ isOpen, onClose }: { isOpen: boolean; onC
     e.preventDefault();
     setStatus("submitting");
 
-    const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
-    const targetUrl = `${baseUrl}/inquiries`;
+    const targetUrl = process.env.NEXT_PUBLIC_API_URL
+      ? `${process.env.NEXT_PUBLIC_API_URL}/inquiries`
+      : "/api/inquiries";
 
     try {
       const response = await fetch(targetUrl, {

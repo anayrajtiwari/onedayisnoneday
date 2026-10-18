@@ -18,7 +18,7 @@ export default function AgencySection() {
                 Strategic Creative Studio
               </span>
               <span className="text-[9px] font-mono tracking-widest px-3 py-1 rounded-full border border-shri-gold/40 text-shri-gold bg-shri-gold/10 uppercase">
-                Coming this October
+                Live Platform
               </span>
             </div>
             <motion.h2
@@ -38,7 +38,7 @@ export default function AgencySection() {
               transition={{ duration: 1, delay: 0.3 }}
               className="mt-6 text-gray-500 text-sm font-light leading-relaxed max-w-lg tracking-wide"
             >
-              Assisting brands, founders, and organizations in cultivating thoughtful digital presence through bespoke social media management, organic SEO authority, and clear digital positioning. Coming this October.
+              Assisting brands, founders, and category architects in cultivating thoughtful digital presence through bespoke social media management, organic SEO authority, and high-voltage web craft.
             </motion.p>
           </div>
 
@@ -48,10 +48,12 @@ export default function AgencySection() {
             viewport={{ once: true }}
           >
             <a
-              href="#inquire"
+              href="https://agencies.shri.org.in"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-shri-gold hover:text-white transition-colors duration-300 border border-shri-gold/30 px-7 py-3.5 rounded-full hover:bg-shri-gold/10"
             >
-              <span>Engage Agency (Coming this October)</span>
+              <span>Visit Agencies by SHRI</span>
               <ArrowUpRight size={14} />
             </a>
           </motion.div>

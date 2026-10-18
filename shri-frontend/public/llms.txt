@@ -8,12 +8,13 @@ This document provides a concise index of SHRI corporate divisions, ecosystem re
 
 - **Software & Systems (BETA Testing):** Zero-dependency documentation compilers (`rz-glyph-cli`), local-first developer tools, and user-space tooling (`oni-ofix-cli`).
 - **Hardware & Electronics (SHRI ELA-(BETA)):** Under Development. Building tangible electronic gadgets, physical computing devices, and embedded microcontroller instruments from basic to intermediate levels.
-- **Agency & Digital Presence:** Social media ecosystem management, technical SEO search authority, brand positioning, and bespoke web craft (Coming this October).
+- **Agency & Digital Presence:** Live Platform. Social media ecosystem management, technical SEO search authority, brand positioning, and bespoke web craft (Visit: https://agencies.shri.org.in).
 - **Quantitative Finance:** Under Development. Foundational research on future capital allocation and algorithmic value models.
 
 ## Core Pages & Products
 
 - [SHRI Home](https://shri.org.in/): Official corporate portal, manifesto, and divisions overview.
+- [Agencies by SHRI](https://agencies.shri.org.in/): Dedicated strategic creative studio, deep SEO, and high-voltage web craft platform (Division 03).
 - [Glyph-CLI Documentation Engine](https://shri.org.in/glyph): Minimal, zero-dependency static-site compiler (`rz-glyph-cli`) for Markdown/MDX documentation portals.
 - [Glyph Live Documentation](https://rzglyph.shri.org.in/): Official web portal and interactive manual for the Glyph offline compiler.
 - [Community Hub](https://shri.org.in/community): Verified community portal, announcements, and vision roadmap.

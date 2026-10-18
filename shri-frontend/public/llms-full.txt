@@ -42,6 +42,16 @@ Modern software tools have become overly bloated, invasive, and distracting. SHR
   - `oni-ofix-cli`: User-space package manager for Linux & Windows laptops requiring no root/sudo privileges.
   - `oni-ofix-android`: Native Kotlin Android APK search & installer supporting dual APIs (Aptoide + F-Droid) with automatic CPU ABI filtering (`arm64-v8a`).
 
+### 3. Agencies by SHRI (`agencies.shri.org.in`)
+- **URL:** https://agencies.shri.org.in
+- **Category:** Strategic Creative Studio / Growth & Search Authority (Division 03)
+- **Description:** Agencies by SHRI provides bespoke digital presence management, organic SEO engineering, narrative architecture, and high-performance Next.js web craft for category architects.
+- **Features:**
+  - Archival editorial aesthetic with directional 3D folio turning (`AgedBookFolio`)
+  - Web Audio API page-turning sound engine with mobile gesture unlocking
+  - Deep search SEO & IndexNow syndication
+  - Direct brief correspondence desk (`agenciesbyshri@gmail.com`)
+
 ---
 
 ## Entity Relationship Graph
@@ -50,15 +60,15 @@ Modern software tools have become overly bloated, invasive, and distracting. SHR
 ┌─────────────────────────────────────────────────────────────┐
 │       Shri Hari Redirect Initiative (SHRI)                  │
 │               https://shri.org.in                           │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-               ┌───────────────┴───────────────┐
-               ▼                               ▼
-  ┌─────────────────────────┐     ┌─────────────────────────┐
-  │   Anay Raj Tiwari       │     │     Ecosystem Tools     │
-  │   (Founder & Architect) │     │  - Glyph-CLI            │
-  │  anay.shri.org.in       │     │  - Oni-Ofix             │
-  └─────────────────────────┘     └─────────────────────────┘
+└──────────────┬──────────────────────────────┬───────────────┘
+               │                              │
+┌──────────────┴──────────────┐┌──────────────┴───────────────┐
+▼                             ▼▼                              ▼
+┌─────────────────────────┐   ┌─────────────────────────┐   ┌─────────────────────────┐
+│   Anay Raj Tiwari       │   │  Agencies by SHRI (D03) │   │     Ecosystem Tools     │
+│   (Founder & Architect) │   │  agencies.shri.org.in   │   │  - Glyph-CLI            │
+│  anay.shri.org.in       │   │                         │   │  - Oni-Ofix             │
+└─────────────────────────┘   └─────────────────────────┘   └─────────────────────────┘
 ```
 
 ---
@@ -66,6 +76,7 @@ Modern software tools have become overly bloated, invasive, and distracting. SHR
 ## Route Sitemap & Canonical References
 
 - **Homepage:** https://shri.org.in/
+- **Agencies by SHRI (Division 03):** https://agencies.shri.org.in/
 - **Glyph-CLI Page:** https://shri.org.in/glyph
 - **Glyph Live Portal:** https://rzglyph.shri.org.in/
 - **Community Hub:** https://shri.org.in/community

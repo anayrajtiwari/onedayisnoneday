@@ -14,8 +14,8 @@ const socialLinks = [
   {
     name: "X",
     icon: <MessageSquare size={24} />,
-    href: "#",
-    external: false
+    href: "https://x.com/__anay___",
+    external: true
   },
   {
     name: "Facebook",
@@ -26,8 +26,8 @@ const socialLinks = [
   {
     name: "E-mail",
     icon: <Mail size={24} />,
-    href: "#",
-    external: false
+    href: "mailto:agenciesbyshri@gmail.com",
+    external: true
   }
 ];
 
@@ -78,7 +78,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="py-40 relative overflow-hidden border-t border-shri-gold/5">
+    <section id="contact" className="py-40 relative overflow-hidden border-t border-shri-gold/5">
+      {/* Invisible anchor target for backwards compatibility */}
+      <div id="inquire" className="absolute -top-24 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         <div className="flex flex-col items-center">
           <motion.div

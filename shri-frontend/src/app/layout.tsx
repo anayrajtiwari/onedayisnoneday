@@ -121,6 +121,7 @@ export default function RootLayout({
           ]
         },
         "sameAs": [
+          "https://agencies.shri.org.in",
           "https://twitter.com/shri_vision",
           "https://instagram.com/shri_vision",
           "https://github.com/anayrajtiwari"
